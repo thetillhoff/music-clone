@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div id="content_area">
+
+  <div class="j-module n j-header">
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <div class="j-module n j-spacing">
+    <div class="cc-m-spacer" style="height: 45px;"></div>
+  </div>
+
+  <div class="j-module n j-table">
+    <table style="border: 1px solid #367714;" cellpadding="7" border="0">
+      <thead>
+        <tr>
+          <th style="border: 1px solid #999999; width: 205px; text-align: left;">Datum</th>
+          <th style="border: 1px solid #999999; width: 300px; text-align: left;">Veranstaltung</th>
+          <th style="border: 1px solid #999999; width: 450px; text-align: left;">Uhrzeit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $.Site.Data.termine }}
+        <tr>
+          <td style="border: 1px solid #999999; width: 205px; text-align: left;">
+            {{ dateFormat "02.01.2006" .date }}
+          </td>
+          <td style="border: 1px solid #999999; width: 300px; text-align: left;">
+            {{ .location }}
+          </td>
+          <td style="border: 1px solid #999999; width: 450px;">
+            {{ .time }} Uhr
+          </td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="j-module n j-text">
+    <p style="text-align: left;">
+      <strong>Bei schlechtem Wetter fallen die Konzerte in dieser Saison aus!</strong>
+    </p>
+  </div>
+
+</div>
+{{ end }}
