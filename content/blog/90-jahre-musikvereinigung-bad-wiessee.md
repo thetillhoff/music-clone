@@ -5,7 +5,7 @@ weight: 50
 slug: "90-jahre-musikvereinigung-bad-wiessee"
 ---
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=298x1024:format=jpg/path/s6e55d6e9df3aa35a/image/i03814bae09e01f90/version/1508001311/image.jpg)
+![](/images/i03814bae09e01f90.jpg)
 
 In diesem Jahr feierte die Musikvereinigung Bad Wiessee ihr 90-jähriges Jubiläum. Aus diesem Anlass fand am 27.10.2017 ein großes Jubiläumskonzert im Gasthof zur Post statt.
 

@@ -5,7 +5,7 @@ weight: 70
 slug: "die-neue-homepage-ist-online"
 ---
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=520x1024:format=jpg/path/s6e55d6e9df3aa35a/image/i11df07112c2d9b2a/version/1504431765/image.jpg)
+![](/images/i11df07112c2d9b2a.jpg)
 
 Nach vielen Jahren haben wir unsere Homepage überarbeitet. Wir können diese nun selbst pflegen und sind nicht mehr auf Programmierer angewiesen, die Änderungen für uns einarbeiten.
 

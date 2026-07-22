@@ -5,7 +5,7 @@ weight: 90
 slug: "neu-in-der-diesjaehrigen-konzertsaison"
 ---
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=687x1024:format=jpg/path/s6e55d6e9df3aa35a/image/i80e50552c34d8358/version/1510591463/image.jpg)
+![](/images/i80e50552c34d8358.jpg)
 
 Konzerte im Kurpark Abwinkel:
 

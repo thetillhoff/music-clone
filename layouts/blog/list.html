@@ -11,7 +11,7 @@
     {{ if .Params.image }}
       {{ $imgSrc = .Params.image }}
     {{ else }}
-      {{ $imgMatches := findRE `https://image\.jimcdn\.com[^"]+` .RawContent 1 }}
+      {{ $imgMatches := findRE `/images/[^)"]+\.jpg` .RawContent 1 }}
       {{ if $imgMatches }}{{ $imgSrc = index $imgMatches 0 }}{{ end }}
     {{ end }}
 

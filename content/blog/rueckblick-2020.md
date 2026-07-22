@@ -5,7 +5,7 @@ weight: 40
 slug: "rueckblick-2020"
 ---
 
-![Gruppenfoto am Eisplatz in Kreuth](https://image.jimcdn.com/app/cms/image/transf/dimension=314x1024:format=jpg/path/s6e55d6e9df3aa35a/image/idab091f0228c495a/version/1638969005/image.jpg "Gruppenfoto am Eisplatz in Kreuth")
+![Gruppenfoto am Eisplatz in Kreuth](/images/idab091f0228c495a.jpg "Gruppenfoto am Eisplatz in Kreuth")
 
 Das Jahr 2020 lies uns anfangs noch hoffen....
 
