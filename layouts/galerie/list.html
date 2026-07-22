@@ -1,13 +1,19 @@
 {{ define "main" }}
   <div class="j-module n j-header"><h1>{{ .Title }}</h1></div>
+
+  <div class="j-module n j-imageSubtitle">
+    <figure class="cc-imagewrapper cc-m-image-align-3 cc-m-width-maxed">
+      <img src="/images/blaskapelle-bad-wiessee.jpg" alt="Blaskapelle Bad Wiessee" style="max-width: 100%; height: auto;">
+    </figure>
+  </div>
+
   {{ if .Content }}<div class="j-module n j-text">{{ .Content }}</div>{{ end }}
 
   <div class="j-module n j-gallery">
     <div class="cc-m-gallery-container cc-m-gallery-cool clearover">
       {{ range hugo.Data.gallery }}
-        {{ $album := .album }}
         {{ range .images }}
-          <div class="cc-m-gallery-cool-item">
+          <div class="cc-m-gallery-cool-item" style="width: auto;">
             <div>
               <a href="/images/gallery/{{ .file }}" class="glightbox" data-gallery="gallery" data-description="{{ .caption }}">
                 <img src="/images/gallery/{{ .file }}"
