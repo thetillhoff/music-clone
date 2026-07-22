@@ -1,6 +1,7 @@
 ---
 title: "Bergmesse am Kirchweihmontag"
 date: 2017-10-19
+weight: 60
 slug: "bergmesse-am-kirta-montag-an-der-aueralm"
 ---
 

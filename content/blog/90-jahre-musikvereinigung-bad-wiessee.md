@@ -1,6 +1,7 @@
 ---
 title: "90 Jahre Musikvereinigung Bad Wiessee"
 date: 2017-10-27
+weight: 50
 slug: "90-jahre-musikvereinigung-bad-wiessee"
 ---
 

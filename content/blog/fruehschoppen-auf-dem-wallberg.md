@@ -1,6 +1,7 @@
 ---
 title: "Frühschoppen auf dem Wallberg"
 date: 2020-07-12
+weight: 30
 slug: "frühschoppen-auf-dem-wallberg"
 ---
 

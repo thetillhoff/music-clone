@@ -1,6 +1,7 @@
 ---
 title: "Unsere neue Homepage"
 date: 2017-07-31
+weight: 70
 slug: "die-neue-homepage-ist-online"
 ---
 

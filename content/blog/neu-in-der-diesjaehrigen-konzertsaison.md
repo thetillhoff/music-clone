@@ -1,6 +1,7 @@
 ---
 title: "Konzerte im Kurpark Abwinkel - NEU!"
 date: 2017-07-20
+weight: 90
 slug: "neu-in-der-diesjährigen-konzertsaison"
 ---
 

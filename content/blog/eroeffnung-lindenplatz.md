@@ -1,6 +1,7 @@
 ---
 title: "Eröffnung Lindenplatz"
 date: 2017-09-03
+weight: 100
 slug: "eröffnung-lindenplatz"
 ---
 

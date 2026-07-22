@@ -1,6 +1,7 @@
 ---
 title: "Kirchweihmontag auf der Aueralm"
 date: 2021-10-18
+weight: 20
 slug: "kirchweihmontag-auf-der-aueralm"
 ---
 

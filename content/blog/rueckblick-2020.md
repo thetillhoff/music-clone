@@ -1,6 +1,7 @@
 ---
 title: "Eisstockturnier"
 date: 2020-02-06
+weight: 40
 slug: "rückblick-2020"
 ---
 
