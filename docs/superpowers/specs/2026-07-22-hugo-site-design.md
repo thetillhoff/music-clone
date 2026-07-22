@@ -34,6 +34,7 @@ music-clone/
 │   │   └── list.html
 │   ├── blog/
 │   ├── galerie/
+│   ├── chronik/
 │   └── kontakt/
 ├── static/
 │   ├── css/                      # scraped Jimdo CSS, unmodified
@@ -73,7 +74,7 @@ Frontmatter: `title`, `date`. Body in German markdown. Hugo list template groups
       caption: ""
 ```
 
-Images in `static/images/gallery/`. Template renders albums with lightbox-compatible markup (matching original JS behavior).
+Images in `static/images/gallery/`. Template renders albums with lightbox-compatible markup. Scrape Jimdo's gallery JS first; if it depends on Jimdo infrastructure and breaks, replace with GLightbox (MIT, self-hosted, single JS+CSS file).
 
 ### Static Pages
 
