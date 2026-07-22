@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="Wir spielen Tanzmusik, bayrisch-böhmische Blasmusik, Konzerte an der Tegernseer Seepromenade und bei Waldfesten.">
+  <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+  <link rel="stylesheet" href="/css/layout.css" type="text/css">
+  <link rel="stylesheet" href="/css/web.css" type="text/css">
+  <style>
+    html, body { margin: 0; }
+    .hidden { display: none; }
+    .jtpl-section-main { width: 100% !important; max-width: 100% !important; }
+    .jtpl-header { padding-top: 80px !important; padding-bottom: 0px !important; }
+    .j-nav-variant-breadcrumb { display: none !important; }
+    .jtpl-footer { padding: 10px 50px !important; }
+  </style>
+</head>
+
+<body class="body cc-page">
+
+<div id="cc-inner">
+
+  <input type="checkbox" id="jtpl-mobile-navigation__checkbox" class="jtpl-mobile-navigation__checkbox">
+
+  <div class="jtpl-main">
+
+    <!-- background area -->
+    <div class="jtpl-background-area"></div>
+
+    <!-- mobile topbar -->
+    <div class="jtpl-mobile-topbar navigation-colors">
+      <label for="jtpl-mobile-navigation__checkbox" class="jtpl-mobile-navigation__label">
+        <span class="jtpl-mobile-topbar__navicon navigation-colors__menu-icon"></span>
+      </label>
+    </div>
+
+    <!-- mobile navigation -->
+    <nav class="jtpl-mobile-navigation navigation-colors">
+      <div class="j-nav-variant-nested">
+        <ul class="cc-nav-level-0 j-nav-level-0">
+          {{ range .Site.Menus.main }}
+            {{ if not .Parent }}
+              <li class="jmd-nav__list-item-0{{ if .HasChildren }} j-nav-has-children{{ end }}">
+                <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ if .HasChildren }}
+                  <span class="jmd-nav__toggle-button"></span>
+                  <ul class="cc-nav-level-1 j-nav-level-1">
+                    {{ range .Children }}
+                      <li class="jmd-nav__list-item-1"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+
+    <!-- desktop navigation -->
+    <nav class="jtpl-navigation">
+      <div class="jtpl-navigation__inner navigation-colors navigation-alignment">
+        <div class="j-nav-variant-nested">
+          <ul class="cc-nav-level-0 j-nav-level-0">
+            {{ range .Site.Menus.main }}
+              {{ if not .Parent }}
+                <li class="jmd-nav__list-item-0{{ if .HasChildren }} j-nav-has-children{{ end }}">
+                  <a href="{{ .URL }}">{{ .Name }}</a>
+                  {{ if .HasChildren }}
+                    <span class="jmd-nav__toggle-button"></span>
+                    <ul class="cc-nav-level-1 j-nav-level-1">
+                      {{ range .Children }}
+                        <li class="jmd-nav__list-item-1"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jtpl-section">
+      <div class="jtpl-section-main">
+
+        <!-- header / site title -->
+        <header class="jtpl-header">
+          <div class="jtpl-logo"></div>
+          <div class="jtpl-title">
+            <div id="cc-website-title">
+              <div class="j-module n j-header">
+                <a href="/"><span class="j-website-title-content">{{ .Site.Title }}</span></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- page content -->
+        <div class="jtpl-content">
+          <div class="jtpl-content__inner">
+            <main>
+              {{- block "main" . }}{{- end }}
+            </main>
+          </div>
+        </div>
+
+        <!-- footer sidebar content -->
+        <footer class="jtpl-footer">
+          <div class="jtpl-footer-content">
+            <div style="display:flex; gap:2em; flex-wrap:wrap; align-items:flex-start;">
+
+              <div style="flex:1; min-width:200px;">
+                <h2>Kontakt</h2>
+                <p>
+                  Musikvereinigung Bad Wiessee<br>
+                  1. Vorstand: Herr Korbinian Herzinger<br>
+                  Sterneggerstr. 9
+                </p>
+                <p>83707 Bad Wiessee</p>
+                <p><strong>Telefon:</strong> 0170 / 9026600</p>
+                <p><strong>eMail:</strong> info@blaskapelle-badwiessee.de</p>
+                <p>
+                  <a href="/impressum/">Impressum</a> /
+                  <a href="/datenschutz/">Datenschutz</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="jtpl-footer__inner">
+            <div class="j-meta-links">
+              Copyright Musikvereinigung Bad Wiessee e.V. - 2017ff
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
