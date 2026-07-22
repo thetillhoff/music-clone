@@ -75,7 +75,7 @@ title: "Musikanten"
             <p>Franz Grauvogl</p>
             <p><span style="font-size: 18px; color: #444444;"><strong>Tenorhorn:</strong></span></p>
             <p>Hubert Götschl</p>
-            <h3><span style="color: #444444; font-size: 18px;"><strong>Bariton:</strong></span></h3>
+            <p><span style="color: #444444; font-size: 18px;"><strong>Bariton:</strong></span></p>
             <p>Georg Erlacher</p>
             <p><span style="color: #444444; font-size: 18px;"><strong>Waldhorn:</strong></span></p>
             <p>Martina Brunner</p>

@@ -12,6 +12,7 @@ title: "Mach mit"
 <p style="text-align: center;"><span style="font-size: 22px;">Wir freuen uns über neue Musiker.</span></p>
 <p style="text-align: center;"><span style="font-size: 22px;"><span style="letter-spacing: -0.4px;">Unsere Proben finden immer montags von 19-21 Uhr</span></span></p>
 <p style="text-align: center;"><span style="font-size: 22px;"><span style="letter-spacing: -0.4px;">am Musikhaus in Bad Wiessee, am Kirchbichl statt.</span></span></p>
+<p style="text-align: center;">&nbsp;</p>
 <p style="text-align: center;"><span style="font-size: 22px;">Wo könnte Dein Platz sein?</span></p>
 </div>
 
