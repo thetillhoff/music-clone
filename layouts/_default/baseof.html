@@ -18,6 +18,11 @@
     .jtpl-footer { padding: 10px 50px !important; }
     /* Fix: layout.css has two theme blocks; second one sets blue bg (#2980b9). Override with original light gray. */
     .jtpl-content { background-color: #f6f6f6 !important; background-color: rgba(246,246,246,.9) !important; }
+    /* Fix: Jimdo platform CSS (not in scraped files) sets nav color #d7d93e and weight 700. */
+    .navigation-colors a, .navigation-colors a:visited { color: #d7d93e !important; font-weight: 700 !important; }
+    /* Current page nav item stays white per layout.css */
+    .jtpl-navigation__inner .j-nav-current > a:link,
+    .jtpl-navigation__inner .j-nav-current > a:visited { color: #fff !important; }
   </style>
 </head>
 
