@@ -3,6 +3,11 @@ languageCode = "de-DE"
 title = "Blaskapelle Bad Wiessee"
 theme = ""
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [permalinks]
   blog = "/blog/:slug/"
 
