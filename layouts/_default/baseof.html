@@ -13,7 +13,7 @@
     html, body { margin: 0; }
     .hidden { display: none; }
     .jtpl-section-main { width: 100% !important; max-width: 100% !important; }
-    .jtpl-header { padding-top: 80px !important; padding-bottom: 0px !important; }
+    .jtpl-header { padding-top: 80px !important; padding-bottom: 50px !important; }
     .j-nav-variant-breadcrumb { display: none !important; }
     .jtpl-footer { padding: 10px 50px !important; }
     /* Fix: layout.css second theme block sets blue bg (#2980b9). Original Jimdo platform CSS injects rgba(255,255,255,.71). */
@@ -27,6 +27,18 @@
     #cc-website-title a { text-decoration: none !important; }
     /* Fix: second Jimdo theme CSS adds clear:both to hgrid columns, stacking them vertically */
     .cc-m-hgrid-column { clear: none !important; }
+    /* Fix: sidebar-options paragraph text is white (Jimdo platform CSS, not in scraped files) */
+    .sidebar-options .j-text, .sidebar-options .j-text p, .sidebar-options .j-text strong,
+    .sidebar-options .j-text a:link, .sidebar-options .j-text a:visited { color: #fff !important; }
+    /* Fix: second Jimdo theme block hides mobile nav toggle button */
+    .jtpl-mobile-navigation .jmd-nav__toggle-button { display: block !important; }
+    /* Scroll-to-top floating button */
+    .cc-FloatingButtonBarContainer { position: fixed; bottom: 60px; right: 60px; z-index: 10100; list-style: none; margin: 0; padding: 0; }
+    .cc-FloatingButtonBarContainer li a { background: rgba(0,0,0,.5); border-radius: 4px; border: 1px solid rgba(255,255,255,.5); display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; text-decoration: none; cursor: pointer; }
+    .cc-FloatingButtonBarContainer-button-scroll { display: none; }
+    .cc-FloatingButtonBarContainer-button-scroll.cc-FloatingButtonBarContainer-button-scroll-show { display: block; }
+    .cc-FloatingButtonBarContainer li a span { color: rgba(255,255,255,.7); font-size: 14px; line-height: 1; }
+    .cc-FloatingButtonBarContainer li a:hover span { color: #fff; }
   </style>
 </head>
 
@@ -159,7 +171,7 @@
 
           <div class="jtpl-footer__inner footer-options">
             <div class="j-meta-links">
-              Copyright Musikvereinigung Bad Wiessee e.V. - 2017ff
+              <a href="/sitemap.xml">Sitemap</a> | Copyright Musikvereinigung Bad Wiessee e.V. - 2017ff
             </div>
           </div>
         </footer>
@@ -171,7 +183,33 @@
 
 </div>
 
+<ul class="cc-FloatingButtonBarContainer cc-FloatingButtonBarContainer-right">
+  <li class="cc-FloatingButtonBarContainer-button-scroll" id="js-scroll-top">
+    <a href="javascript:void(0);" title="Nach oben scrollen" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <span>&#9650;</span>
+    </a>
+  </li>
+</ul>
+
 <script src="/js/glightbox.min.js"></script>
 <script>GLightbox({ selector: '.glightbox' });</script>
+<script>
+// Mobile nav toggle
+document.querySelectorAll('.jtpl-mobile-navigation .jmd-nav__toggle-button').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var li = btn.parentElement;
+    var ul = li.querySelector('ul');
+    var open = li.classList.contains('jmd-nav__item--last-opened');
+    li.classList.toggle('jmd-nav__item--last-opened', !open);
+    if (ul) ul.style.display = open ? 'none' : 'block';
+  });
+});
+// Scroll-to-top visibility
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('js-scroll-top');
+  btn.classList.toggle('cc-FloatingButtonBarContainer-button-scroll-show', window.scrollY > 300);
+});
+</script>
 </body>
 </html>
