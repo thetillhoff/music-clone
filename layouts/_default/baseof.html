@@ -44,6 +44,12 @@
     .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; }
     .cc-m-gallery-container { overflow: hidden; }
     .cc-m-gallery-cool-item img { max-width: 100%; height: auto; display: block; }
+    /* Chronik buttons: 4-col grid, 2-col on mobile */
+    .chronik-buttons { display: flex; flex-wrap: wrap; }
+    .chronik-buttons > div { width: 25%; box-sizing: border-box; }
+    @media (max-width: 640px) {
+      .chronik-buttons > div { width: 50%; }
+    }
     /* Responsive: stack gallery items vertically on mobile (not the galerie which uses cc-m-gallery-cool) */
     @media (max-width: 767px) {
       .cc-m-gallery-container:not(.cc-m-gallery-cool) .cc-m-gallery-cool-item {
