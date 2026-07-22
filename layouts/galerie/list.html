@@ -1,5 +1,6 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <div class="j-module n j-header"><h1>{{ .Title }}</h1></div>
+  {{ if .Content }}<div class="j-module n j-text">{{ .Content }}</div>{{ end }}
 
   {{ range hugo.Data.gallery }}
     {{ $album := .album }}
