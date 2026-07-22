@@ -19,7 +19,7 @@
         </tr>
       </thead>
       <tbody>
-        {{ range $.Site.Data.termine }}
+        {{ range hugo.Data.termine }}
         <tr>
           <td style="border: 1px solid #999999; width: 205px; text-align: left;">
             {{ dateFormat "02.01.2006" .date }}
