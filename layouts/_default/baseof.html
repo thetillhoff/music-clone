@@ -16,8 +16,8 @@
     .jtpl-header { padding-top: 80px !important; padding-bottom: 0px !important; }
     .j-nav-variant-breadcrumb { display: none !important; }
     .jtpl-footer { padding: 10px 50px !important; }
-    /* Fix: layout.css has two theme blocks; second one sets blue bg (#2980b9). Override with original light gray. */
-    .jtpl-content { background-color: #f6f6f6 !important; background-color: rgba(246,246,246,.9) !important; }
+    /* Fix: layout.css second theme block sets blue bg (#2980b9). Original Jimdo platform CSS injects rgba(255,255,255,.71). */
+    .jtpl-content { background-color: #fff !important; background-color: rgba(255,255,255,.71) !important; }
     /* Fix: Jimdo platform CSS (not in scraped files) sets nav color #d7d93e and weight 700. */
     .navigation-colors a, .navigation-colors a:visited { color: #d7d93e !important; font-weight: 700 !important; }
     /* Current page nav item stays white per layout.css */
@@ -25,6 +25,8 @@
     .jtpl-navigation__inner .j-nav-current > a:visited { color: #fff !important; }
     /* Fix: site title link gets underline from second theme's a:link rule; original has none */
     #cc-website-title a { text-decoration: none !important; }
+    /* Fix: second Jimdo theme CSS adds clear:both to hgrid columns, stacking them vertically */
+    .cc-m-hgrid-column { clear: none !important; }
   </style>
 </head>
 
