@@ -1,0 +1,57 @@
+baseURL = "https://www.blaskapelle-badwiessee.de/"
+languageCode = "de-DE"
+title = "Blaskapelle Bad Wiessee"
+theme = ""
+
+[permalinks]
+  blog = "/blog/:slug/"
+
+[[menus.main]]
+  identifier = "ueber-uns"
+  name = "Über uns"
+  url = "/ueber-uns/"
+  weight = 1
+
+[[menus.main]]
+  identifier = "musikanten"
+  name = "Musikanten"
+  url = "/ueber-uns/musikanten/"
+  parent = "ueber-uns"
+  weight = 1
+
+[[menus.main]]
+  identifier = "mach-mit"
+  name = "Mach mit"
+  url = "/ueber-uns/mach-mit/"
+  parent = "ueber-uns"
+  weight = 2
+
+[[menus.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 2
+
+[[menus.main]]
+  identifier = "termine"
+  name = "Termine"
+  url = "/termine/"
+  weight = 3
+
+[[menus.main]]
+  identifier = "chronik"
+  name = "Chronik"
+  url = "/chronik/"
+  weight = 4
+
+[[menus.main]]
+  identifier = "galerie"
+  name = "Galerie"
+  url = "/galerie/"
+  weight = 5
+
+[[menus.main]]
+  identifier = "kontakt"
+  name = "Kontakt"
+  url = "/kontakt/"
+  weight = 6
