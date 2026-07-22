@@ -1,3 +1,31 @@
 {{ define "main" }}
-  {{ .Content }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+<figure>
+  <img src="/images/kontakt-portrait.jpg" alt="" style="max-width:100%;height:auto;">
+</figure>
+
+<p>Wir freuen uns über Ihr Interesse und beantworten Ihr Anliegen schnellstmöglich.</p>
+
+<figure>
+  <img src="/images/kontakt-band.jpg" alt="" style="max-width:100%;height:auto;">
+</figure>
+
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact">
+  <p hidden><label>Nicht ausfüllen: <input name="bot-field"></label></p>
+  <p>
+    <label>NAME<br><input type="text" name="name" required style="width:100%;padding:.4em;box-sizing:border-box;"></label>
+  </p>
+  <p>
+    <label>E-MAIL<br><input type="email" name="email" required autocorrect="off" autocapitalize="off" style="width:100%;padding:.4em;box-sizing:border-box;"></label>
+  </p>
+  <p>
+    <label>NACHRICHT<br><textarea name="message" rows="6" required style="width:100%;padding:.4em;box-sizing:border-box;"></textarea></label>
+  </p>
+  <p>Es gilt unsere <a href="/datenschutz/">Datenschutzerklärung</a></p>
+  <p><input type="submit" value="Jetzt abschicken" style="padding:.4em 1em;cursor:pointer;"></p>
+</form>
 {{ end }}
