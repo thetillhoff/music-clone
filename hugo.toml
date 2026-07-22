@@ -14,7 +14,7 @@ theme = ""
 [[menus.main]]
   identifier = "ueber-uns"
   name = "Über uns"
-  url = "/ueber-uns/musikanten/"
+  url = "/"
   weight = 1
 
 [[menus.main]]
