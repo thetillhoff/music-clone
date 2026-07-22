@@ -1,7 +1,14 @@
 {{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
-    <time>{{ .Date.Format "02.01.2006" }}</time>
+<article class="j-blog">
+  <div class="n j-blog-meta j-blog-post--header">
+    <div class="j-text j-module n">
+      <a href="/blog/{{ .Date.Format "2006" }}/" class="j-blog-post--category">{{ .Date.Format "2006" }}</a>
+      &nbsp;·&nbsp;<span class="j-text j-blog-post--date">{{ .Date.Format "02.01.2006" }}</span>
+    </div>
+    <h1 class="j-blog-header j-blog-headline j-blog-post--headline">{{ .Title }}</h1>
+  </div>
+  <div class="post j-blog-content">
     {{ .Content }}
-  </article>
+  </div>
+</article>
 {{ end }}
