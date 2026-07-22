@@ -4,3 +4,15 @@
 
 [build.environment]
   HUGO_VERSION = "0.147.0"
+
+[[redirects]]
+  from = "/ueber-uns/"
+  to = "/ueber-uns/musikanten/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ueber-uns"
+  to = "/ueber-uns/musikanten/"
+  status = 301
+  force = true
