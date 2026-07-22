@@ -16,6 +16,8 @@
     .jtpl-header { padding-top: 80px !important; padding-bottom: 0px !important; }
     .j-nav-variant-breadcrumb { display: none !important; }
     .jtpl-footer { padding: 10px 50px !important; }
+    /* Fix: layout.css has two theme blocks; second one sets blue bg (#2980b9). Override with original light gray. */
+    .jtpl-content { background-color: #f6f6f6 !important; background-color: rgba(246,246,246,.9) !important; }
   </style>
 </head>
 
@@ -28,7 +30,7 @@
   <div class="jtpl-main">
 
     <!-- background area -->
-    <div class="jtpl-background-area"></div>
+    <div class="jtpl-background-area" style="background-image:url('/images/background.jpg');background-size:cover;background-position:center;"></div>
 
     <!-- mobile topbar -->
     <div class="jtpl-mobile-topbar navigation-colors">
@@ -101,7 +103,7 @@
         </header>
 
         <!-- page content -->
-        <div class="jtpl-content">
+        <div class="jtpl-content content-options cc-content-parent">
           <div class="jtpl-content__inner">
             <main>
               {{- block "main" . }}{{- end }}
@@ -110,30 +112,43 @@
         </div>
 
         <!-- footer sidebar content -->
-        <footer class="jtpl-footer">
-          <div class="jtpl-footer-content">
-            <div style="display:flex; gap:2em; flex-wrap:wrap; align-items:flex-start;">
-
-              <div style="flex:1; min-width:200px;">
-                <h2>Kontakt</h2>
-                <p>
-                  Musikvereinigung Bad Wiessee<br>
-                  1. Vorstand: Herr Korbinian Herzinger<br>
-                  Sterneggerstr. 9
-                </p>
-                <p>83707 Bad Wiessee</p>
-                <p><strong>Telefon:</strong> 0170 / 9026600</p>
-                <p><strong>eMail:</strong> info@blaskapelle-badwiessee.de</p>
-                <p>
-                  <a href="/impressum/">Impressum</a> /
-                  <a href="/datenschutz/">Datenschutz</a>
-                </p>
+        <footer class="jtpl-footer sidebar-options">
+          <div class="j-module n j-spacing"><div class="cc-m-spacer" style="height: 25px;"></div></div>
+          <div class="j-module n j-hgrid">
+            <div class="cc-m-hgrid-column" style="width: 31.99%;">
+              <div class="j-module n j-imageSubtitle">
+                <figure class="cc-imagewrapper cc-m-image-align-1 cc-m-width-maxed">
+                  <img src="/images/gallery/i67d12d4c195f6273.jpg" alt="" style="max-width:100%;height:auto;">
+                </figure>
+                <div class="cc-clear"></div>
               </div>
-
             </div>
+            <div class="cc-m-hgrid-column" style="width: 31.99%;">
+              <div class="j-module n j-header"><h2>Kontakt</h2></div>
+              <div class="j-module n j-text">
+                <p>Musikvereinigung Bad Wiessee<br>1. Vorstand: Herr Korbinian Herzinger<br>Sterneggerstr. 9</p>
+                <p>83707 Bad Wiessee</p>
+                <p>&nbsp;</p>
+                <p><strong>Telefon: </strong> 0170 / 9026600</p>
+                <p><strong>eMail: </strong> info@blaskapelle-badwiessee.de</p>
+              </div>
+              <div class="j-module n j-text">
+                <p><span style="font-size: 16px;"><a href="/impressum/">Impressum</a> / <a href="/datenschutz/">Datenschutz</a></span></p>
+              </div>
+            </div>
+            <div class="cc-m-hgrid-column last" style="width: 31.99%;">
+              <div class="j-module n j-imageSubtitle">
+                <figure class="cc-imagewrapper cc-m-image-align-1 cc-m-width-maxed">
+                  <img src="/images/gallery/ie10a4ee685065496.jpg" alt="" style="max-width:100%;height:auto;">
+                </figure>
+                <div class="cc-clear"></div>
+              </div>
+            </div>
+            <br class="cc-clear">
           </div>
+          <div class="j-module n j-spacing"><div class="cc-m-spacer" style="height: 50px;"></div></div>
 
-          <div class="jtpl-footer__inner">
+          <div class="jtpl-footer__inner footer-options">
             <div class="j-meta-links">
               Copyright Musikvereinigung Bad Wiessee e.V. - 2017ff
             </div>
