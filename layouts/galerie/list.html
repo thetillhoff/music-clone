@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ range hugo.Data.gallery }}
+    {{ $album := .album }}
+    <section class="gallery-section">
+      <h2>{{ $album }}</h2>
+      <div class="gallery-album">
+        {{ range .images }}
+          <a href="/images/gallery/{{ .file }}" class="glightbox" data-gallery="{{ $album }}" data-description="{{ .caption }}">
+            <img src="/images/gallery/{{ .file }}"
+                 alt="{{ .caption }}"
+                 loading="lazy">
+          </a>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

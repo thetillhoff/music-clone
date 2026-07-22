@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="Wir spielen Tanzmusik, bayrisch-böhmische Blasmusik, Konzerte an der Tegernseer Seepromenade und bei Waldfesten.">
+  <link rel="stylesheet" href="/css/glightbox.min.css">
   <link rel="stylesheet" href="/css/fonts.css" type="text/css">
   <link rel="stylesheet" href="/css/layout.css" type="text/css">
   <link rel="stylesheet" href="/css/web.css" type="text/css">
@@ -146,5 +147,7 @@
 
 </div>
 
+<script src="/js/glightbox.min.js"></script>
+<script>GLightbox({ selector: '.glightbox' });</script>
 </body>
 </html>
