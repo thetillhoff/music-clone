@@ -209,13 +209,23 @@
 <script src="/js/glightbox.min.js"></script>
 <script>GLightbox({ selector: '.glightbox' });</script>
 <script>
-// Mobile nav toggle
-document.querySelectorAll('.jtpl-mobile-navigation .jmd-nav__toggle-button').forEach(function(btn) {
+// Mobile nav toggle — accordion: opening one closes others
+var navBtns = document.querySelectorAll('.jtpl-mobile-navigation .jmd-nav__toggle-button');
+navBtns.forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
     var li = btn.parentElement;
     var ul = li.querySelector('ul');
     var open = li.classList.contains('jmd-nav__item--last-opened');
+    // Close all other open items
+    navBtns.forEach(function(other) {
+      var otherLi = other.parentElement;
+      if (otherLi !== li && otherLi.classList.contains('jmd-nav__item--last-opened')) {
+        otherLi.classList.remove('jmd-nav__item--last-opened');
+        var otherUl = otherLi.querySelector('ul');
+        if (otherUl) otherUl.style.display = 'none';
+      }
+    });
     li.classList.toggle('jmd-nav__item--last-opened', !open);
     if (ul) ul.style.display = open ? 'none' : 'block';
   });
