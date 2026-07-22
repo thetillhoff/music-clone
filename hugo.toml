@@ -6,7 +6,7 @@ title = "Blaskapelle Bad Wiessee"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = false
+      unsafe = true
 
 [permalinks]
   blog = "/:year/:month/:day/:slug/"
