@@ -35,10 +35,10 @@
     .jtpl-mobile-navigation .jmd-nav__toggle-button { display: block !important; }
     /* Scroll-to-top floating button */
     .cc-FloatingButtonBarContainer { position: fixed; bottom: 60px; right: 60px; z-index: 10100; list-style: none; margin: 0; padding: 0; }
-    .cc-FloatingButtonBarContainer li a { background: rgba(0,0,0,.5); border-radius: 4px; border: 1px solid rgba(255,255,255,.5); display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; text-decoration: none; cursor: pointer; }
+    .cc-FloatingButtonBarContainer li a { background: rgba(0,0,0,.5); border-radius: 4px; border: 1px solid rgba(255,255,255,.5); display: block; position: relative; width: 30px; height: 30px; text-decoration: none; cursor: pointer; }
     .cc-FloatingButtonBarContainer-button-scroll { display: none; }
     .cc-FloatingButtonBarContainer-button-scroll.cc-FloatingButtonBarContainer-button-scroll-show { display: block; }
-    .cc-FloatingButtonBarContainer li a span { color: rgba(255,255,255,.7); font-size: 18px; line-height: 1; font-weight: bold; margin-top: 3px; }
+    .cc-FloatingButtonBarContainer li a span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -43%); color: rgba(255,255,255,.7); font-size: 18px; line-height: 1; font-weight: bold; }
     .cc-FloatingButtonBarContainer li a:hover span { color: #fff; }
     /* Jimdo platform injects float layout for gallery cool items */
     .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; }

@@ -12,12 +12,29 @@ title: "Kontakt"
       <p><span style="font-size: 18px;">Herr Korbinian Herzinger</span></p>
       <p><span style="font-size: 18px;">Sterneggerstr. 9</span></p>
       <p><span style="font-size: 18px;">83707 Bad Wiessee</span></p>
-      <p><span style="font-size: 20px;"><strong>Telefon&nbsp;&nbsp;&nbsp;0170 / 9026600</strong></span></p>
+      <p><span style="font-size: 20px;">&nbsp;</span></p>
+      <p><span style="font-size: 20px;"><strong>Telefon &nbsp; 0170 / 9026600</strong></span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="j-module n j-imageSubtitle">
+      <figure class="cc-imagewrapper cc-m-image-align-1">
+        <img src="/images/kontakt-portrait.jpg" alt="" style="max-width:100%;height:auto;">
+      </figure>
+      <div class="cc-clear"></div>
     </div>
   </div>
   <div class="cc-m-hgrid-column last" style="width: 71.63%;">
     <div class="j-module n j-text">
       <p style="text-align: left;">Wir freuen uns über Ihr Interesse und beantworten Ihr Anliegen schnellstmöglich.</p>
+    </div>
+    <div class="j-module n j-imageSubtitle">
+      <figure class="cc-imagewrapper cc-m-image-align-1 cc-m-width-maxed">
+        <img src="/images/kontakt-band.jpg" alt="" style="max-width:100%;height:auto;">
+      </figure>
+      <div class="cc-clear"></div>
     </div>
     <div class="j-module n j-formnew">
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="cc-m-form cc-m-form-layout-1">
