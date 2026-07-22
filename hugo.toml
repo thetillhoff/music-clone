@@ -9,7 +9,7 @@ theme = ""
       unsafe = true
 
 [permalinks]
-  blog = "/blog/:slug/"
+  blog = "/:year/:month/:day/:slug/"
 
 [[menus.main]]
   identifier = "ueber-uns"

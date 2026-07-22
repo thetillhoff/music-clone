@@ -47,7 +47,7 @@ title: "Kontakt"
           <label></label>
           <div class="cc-m-form-view-input-wrapper">
             <div><label>Es gilt unsere <a href="/datenschutz/">Datenschutzerklärung</a></label></div>
-            <button type="submit">Senden</button>
+            <input type="submit" value="Jetzt abschicken">
           </div>
         </div>
         <p class="cc-m-form-note"><strong>Hinweis:</strong> Bitte die mit <span class="j-m-required">*</span> gekennzeichneten Felder ausfüllen.</p>
