@@ -9,7 +9,7 @@ theme = ""
 [[menus.main]]
   identifier = "ueber-uns"
   name = "Über uns"
-  url = "/ueber-uns/"
+  url = "/ueber-uns/musikanten/"
   weight = 1
 
 [[menus.main]]
@@ -22,7 +22,7 @@ theme = ""
 [[menus.main]]
   identifier = "mach-mit"
   name = "Mach mit"
-  url = "/ueber-uns/mach-mit/"
+  url = "/mach-mit/"
   parent = "ueber-uns"
   weight = 2
 
@@ -41,7 +41,7 @@ theme = ""
 [[menus.main]]
   identifier = "chronik"
   name = "Chronik"
-  url = "/chronik/"
+  url = "/chronik-1/"
   weight = 4
 
 [[menus.main]]
