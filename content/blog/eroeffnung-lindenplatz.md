@@ -2,7 +2,7 @@
 title: "Eröffnung Lindenplatz"
 date: 2017-09-03
 weight: 100
-slug: "eröffnung-lindenplatz"
+slug: "eroeffnung-lindenplatz"
 ---
 
 <p>Die Blaskapelle Bad Wiessee umrahmte musikalisch die feierliche <strong>Eröffnung des neu gestalteten Lindenplatzes</strong> in der Ortsmitte.</p>

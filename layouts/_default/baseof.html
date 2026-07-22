@@ -8,38 +8,34 @@
   <link rel="stylesheet" href="/css/glightbox.min.css">
   <link rel="stylesheet" href="/css/fonts.css" type="text/css">
   <link rel="stylesheet" href="/css/layout.css" type="text/css">
-  <link rel="stylesheet" href="/css/web.css" type="text/css">
   <style>
     html, body { margin: 0; }
     .hidden { display: none; }
-    .jtpl-section-main { width: 100% !important; max-width: 100% !important; }
-    .jtpl-header { padding-top: 80px !important; padding-bottom: 50px !important; }
-    .j-nav-variant-breadcrumb { display: none !important; }
-    .jtpl-footer { padding: 10px 50px !important; }
-    /* Fix: layout.css second theme block sets blue bg (#2980b9). Original Jimdo platform CSS injects rgba(255,255,255,.71). */
-    .jtpl-content { background-color: #fff !important; background-color: rgba(255,255,255,.71) !important; }
-    /* Fix: Jimdo platform CSS sets ACTIVE nav item yellow+bold; others are white from layout.css */
+    .jtpl-section-main { width: 100%; max-width: 100%; }
+    .jtpl-header { padding-top: 80px; padding-bottom: 50px; }
+    .j-nav-variant-breadcrumb { display: none; }
+    .jtpl-footer { padding: 10px 50px; }
+    /* layout.css second theme block overrides bg to blue; our <style> (later in cascade) corrects it */
+    .jtpl-content { background-color: rgba(255,255,255,.71); }
+    /* Active nav item: layout.css .jtpl-navigation__inner selector has higher specificity — !important needed */
     .navigation-colors .j-nav-current > a,
-    .navigation-colors .j-nav-current > a:visited { color: #d7d93e !important; font-weight: 700 !important; }
+    .navigation-colors .j-nav-current > a:visited { color: #d7d93e !important; font-weight: 700; }
     /* Dropdown level-1: white, weight 400 */
     .navigation-colors .j-nav-level-1 a,
-    .navigation-colors .j-nav-level-1 a:visited { color: #fff !important; font-weight: 400 !important; }
-    /* Fix: site title link gets underline from second theme's a:link rule; original has none */
-    #cc-website-title a { text-decoration: none !important; }
-    /* Fix: second Jimdo theme CSS adds clear:both to hgrid columns, stacking them vertically */
-    .cc-m-hgrid-column { clear: none !important; }
-    /* Fix: sidebar-options paragraph text is white (Jimdo platform CSS, not in scraped files) */
-    .sidebar-options .j-text, .sidebar-options .j-text p, .sidebar-options .j-text strong,
-    .sidebar-options .j-text a:link, .sidebar-options .j-text a:visited { color: #fff !important; }
-    /* Fix: second Jimdo theme block hides mobile nav toggle button */
-    .jtpl-mobile-navigation .jmd-nav__toggle-button { display: block !important; }
+    .navigation-colors .j-nav-level-1 a:visited { color: #fff; font-weight: 400; }
+    #cc-website-title a { text-decoration: none; }
+    /* Fix: .j-module a:link sets dark link colors; sidebar footer links need white */
+    .sidebar-options .j-text a:link,
+    .sidebar-options .j-text a:visited { color: #fff; }
+    /* layout.css .jmd-nav__toggle-button{display:none}; our selector (.jtpl-mobile-navigation .jmd-nav__toggle-button) wins specificity */
+    .jtpl-mobile-navigation .jmd-nav__toggle-button { display: block; }
     /* Scroll-to-top floating button */
     .cc-FloatingButtonBarContainer { position: fixed; bottom: 60px; right: 60px; z-index: 10100; list-style: none; margin: 0; padding: 0; }
-    .cc-FloatingButtonBarContainer li a { background: rgba(0,0,0,.5); border-radius: 4px; border: 1px solid rgba(255,255,255,.5); display: block; position: relative; width: 30px; height: 30px; text-decoration: none; cursor: pointer; }
+    .cc-FloatingButtonBarContainer li button { background: rgba(0,0,0,.5); border-radius: 4px; border: 1px solid rgba(255,255,255,.5); display: block; position: relative; width: 30px; height: 30px; cursor: pointer; padding: 0; }
     .cc-FloatingButtonBarContainer-button-scroll { display: none; }
     .cc-FloatingButtonBarContainer-button-scroll.cc-FloatingButtonBarContainer-button-scroll-show { display: block; }
-    .cc-FloatingButtonBarContainer li a span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -43%); color: rgba(255,255,255,.7); font-size: 18px; line-height: 1; font-weight: bold; }
-    .cc-FloatingButtonBarContainer li a:hover span { color: #fff; }
+    .cc-FloatingButtonBarContainer li button span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -43%); color: rgba(255,255,255,.7); font-size: 18px; line-height: 1; font-weight: bold; }
+    .cc-FloatingButtonBarContainer li button:hover span { color: #fff; }
     /* Jimdo platform injects float layout for gallery cool items */
     .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; }
     .cc-m-gallery-container { overflow: hidden; }
@@ -53,8 +49,8 @@
     /* Responsive: stack gallery items vertically on mobile (not the galerie which uses cc-m-gallery-cool) */
     @media (max-width: 767px) {
       .cc-m-gallery-container:not(.cc-m-gallery-cool) .cc-m-gallery-cool-item {
-        width: 100% !important;
-        float: none !important;
+        width: 100%;
+        float: none;
       }
       .cc-m-gallery-container:not(.cc-m-gallery-cool) .cc-m-gallery-cool-item img {
         max-width: 100%;
@@ -65,9 +61,9 @@
     .j-calltoaction-align-1 { text-align: left; }
     .j-calltoaction-align-2 { text-align: center; }
     .j-calltoaction-align-3 { text-align: right; }
-    .jtpl-content { color: #333332 !important; }
+    .jtpl-content { color: #333332; }
     .jtpl-content p { text-align: justify; }
-    .j-website-title-content { font-weight: 400 !important; }
+    .j-website-title-content { font-weight: 400; }
     .jtpl-content .chronik-year-heading { font-size: 22px; font-weight: bold; text-align: left; margin-top: 1.8em; margin-bottom: 0.4em; }
     .jtpl-content .chronik-subheading { font-weight: bold; text-align: left; margin-top: 1.5em; margin-bottom: 0.3em; }
   </style>
@@ -77,7 +73,7 @@
 
 <div id="cc-inner">
 
-  <input type="checkbox" id="jtpl-mobile-navigation__checkbox" class="jtpl-mobile-navigation__checkbox">
+  <input type="checkbox" id="jtpl-mobile-navigation__checkbox" class="jtpl-mobile-navigation__checkbox" aria-hidden="true">
 
   <div class="jtpl-main">
 
@@ -86,7 +82,7 @@
 
     <!-- mobile topbar -->
     <div class="jtpl-mobile-topbar navigation-colors">
-      <label for="jtpl-mobile-navigation__checkbox" class="jtpl-mobile-navigation__label">
+      <label for="jtpl-mobile-navigation__checkbox" class="jtpl-mobile-navigation__label" aria-label="Menü öffnen">
         <span class="jtpl-mobile-topbar__navicon navigation-colors__menu-icon"></span>
       </label>
     </div>
@@ -94,50 +90,20 @@
     {{ $cur := .Page.RelPermalink }}
 
     <!-- mobile navigation -->
-    <nav class="jtpl-mobile-navigation navigation-colors">
+    <nav class="jtpl-mobile-navigation navigation-colors" aria-label="Mobile Navigation">
       <div class="j-nav-variant-nested">
         <ul class="cc-nav-level-0 j-nav-level-0">
-          {{ range .Site.Menus.main }}
-            {{ if not .Parent }}
-              {{ $active := or (eq $cur .URL) (and (ne .URL "/") (strings.HasPrefix $cur .URL)) }}
-              <li class="jmd-nav__list-item-0{{ if .HasChildren }} j-nav-has-children{{ end }}{{ if $active }} j-nav-current{{ end }}">
-                <a href="{{ .URL }}">{{ .Name }}</a>
-                {{ if .HasChildren }}
-                  <span class="jmd-nav__toggle-button"></span>
-                  <ul class="cc-nav-level-1 j-nav-level-1">
-                    {{ range .Children }}
-                      <li class="jmd-nav__list-item-1{{ if eq $cur .URL }} j-nav-current{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
-                    {{ end }}
-                  </ul>
-                {{ end }}
-              </li>
-            {{ end }}
-          {{ end }}
+          {{ partial "nav-items.html" (dict "site" .Site "cur" $cur) }}
         </ul>
       </div>
     </nav>
 
     <!-- desktop navigation -->
-    <nav class="jtpl-navigation">
+    <nav class="jtpl-navigation" aria-label="Hauptnavigation">
       <div class="jtpl-navigation__inner navigation-colors navigation-alignment">
         <div class="j-nav-variant-nested">
           <ul class="cc-nav-level-0 j-nav-level-0">
-            {{ range .Site.Menus.main }}
-              {{ if not .Parent }}
-                {{ $active := or (eq $cur .URL) (and (ne .URL "/") (strings.HasPrefix $cur .URL)) }}
-                <li class="jmd-nav__list-item-0{{ if .HasChildren }} j-nav-has-children{{ end }}{{ if $active }} j-nav-current{{ end }}">
-                  <a href="{{ .URL }}">{{ .Name }}</a>
-                  {{ if .HasChildren }}
-                    <span class="jmd-nav__toggle-button"></span>
-                    <ul class="cc-nav-level-1 j-nav-level-1">
-                      {{ range .Children }}
-                        <li class="jmd-nav__list-item-1{{ if eq $cur .URL }} j-nav-current{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
-                      {{ end }}
-                    </ul>
-                  {{ end }}
-                </li>
-              {{ end }}
-            {{ end }}
+            {{ partial "nav-items.html" (dict "site" .Site "cur" $cur) }}
           </ul>
         </div>
       </div>
@@ -220,9 +186,9 @@
 
 <ul class="cc-FloatingButtonBarContainer cc-FloatingButtonBarContainer-right">
   <li class="cc-FloatingButtonBarContainer-button-scroll" id="js-scroll-top">
-    <a href="javascript:void(0);" title="Nach oben scrollen" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <button type="button" title="Nach oben scrollen" onclick="window.scrollTo({top:0,behavior:'smooth'})">
       <span>&#94;</span>
-    </a>
+    </button>
   </li>
 </ul>
 

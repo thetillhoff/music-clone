@@ -22,6 +22,7 @@ const repoJson = JSON.stringify({
 // Create Netlify site linked to the GitHub repo.
 // Requires netlify-cli on the machine running `pulumi up`.
 const site = new command.local.Command("netlify-site", {
+    triggers: [repoJson, siteName],
     create: pulumi.interpolate`netlify api createSite \
         --data '{"name":"${siteName}","repo":${repoJson}}'`,
     // ponytail: looks up site by name at destroy time; site_id is a UUID from Netlify so safe to interpolate
@@ -30,15 +31,19 @@ const site = new command.local.Command("netlify-site", {
                    const s=d.find(x=>x.name===${JSON.stringify(siteName)}); \
                    process.stdout.write(s?s.id:'')"); \
         [ -n "$SITE_ID" ] && \
-          netlify api deleteSite --data "{\"site_id\":\"$SITE_ID\"}" || true`,
+          netlify api deleteSite --data "{\"site_id\":\"$SITE_ID\"}" || [ -z "$SITE_ID" ]`,
     environment: {
         NETLIFY_AUTH_TOKEN: netlifyToken,
     },
 });
 
 const siteData = site.stdout.apply((out) => {
-    const parsed = JSON.parse(out) as { id: string; ssl_url?: string; url: string };
-    return parsed;
+    if (!out) throw new Error("netlify api createSite returned empty output");
+    try {
+        return JSON.parse(out) as { id: string; ssl_url?: string; url: string };
+    } catch (e) {
+        throw new Error(`netlify api createSite returned non-JSON: ${String(out).slice(0, 200)}`);
+    }
 });
 
 export const siteId  = siteData.apply((d) => d.id);

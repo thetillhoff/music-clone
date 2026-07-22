@@ -1,12 +1,12 @@
 baseURL = "https://www.blaskapelle-badwiessee.de/"
 languageCode = "de-DE"
+defaultContentLanguage = "de"
 title = "Blaskapelle Bad Wiessee"
-theme = ""
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = false
 
 [permalinks]
   blog = "/:year/:month/:day/:slug/"
@@ -35,20 +35,6 @@ theme = ""
   identifier = "blog"
   name = "Blog"
   url = "/blog/"
-  weight = 2
-
-[[menus.main]]
-  identifier = "blog-2021"
-  name = "2021"
-  url = "/blog/2021/"
-  parent = "blog"
-  weight = 1
-
-[[menus.main]]
-  identifier = "blog-2020"
-  name = "2020"
-  url = "/blog/2020/"
-  parent = "blog"
   weight = 2
 
 [[menus.main]]

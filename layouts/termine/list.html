@@ -20,31 +20,33 @@
     </div>
     <div class="cc-m-hgrid-column last" style="width: 69.89%;">
       <div class="j-module n j-table">
-        <table style="border: 1px solid #367714;" cellpadding="7" border="0">
+        <div style="overflow-x: auto;">
+        <table style="border: 1px solid #367714;">
       <thead>
         <tr>
-          <th style="border: 1px solid #999999; width: 205px; text-align: left;">Datum</th>
-          <th style="border: 1px solid #999999; width: 300px; text-align: left;">Veranstaltung</th>
-          <th style="border: 1px solid #999999; width: 450px; text-align: left;">Uhrzeit</th>
+          <th style="border: 1px solid #999999; padding: 7px; width: 205px; text-align: left;">Datum</th>
+          <th style="border: 1px solid #999999; padding: 7px; width: 300px; text-align: left;">Veranstaltung</th>
+          <th style="border: 1px solid #999999; padding: 7px; width: 450px; text-align: left;">Uhrzeit</th>
         </tr>
       </thead>
       <tbody>
         {{ range hugo.Data.termine }}
         <tr>
-          <td style="border: 1px solid #999999; width: 205px; text-align: left;">
+          <td style="border: 1px solid #999999; padding: 7px; width: 205px; text-align: left;">
             {{ dateFormat "02.01.2006" .date }}
           </td>
-          <td style="border: 1px solid #999999; width: 300px; text-align: left;">
+          <td style="border: 1px solid #999999; padding: 7px; width: 300px; text-align: left;">
             {{ .location }}
           </td>
-          <td style="border: 1px solid #999999; width: 450px;">
+          <td style="border: 1px solid #999999; padding: 7px; width: 450px;">
             {{ .time }} Uhr
           </td>
         </tr>
         {{ end }}
       </tbody>
     </table>
-  </div>
+        </div>
+      </div>
       <div class="j-module n j-text">
         <p style="text-align: left;">
           <strong>Bei schlechtem Wetter fallen die Konzerte in dieser Saison aus!</strong>

@@ -2,7 +2,7 @@
 title: "Großes Seefestkonzert am 20.08.17"
 date: 2017-08-10
 weight: 80
-slug: "großes-seefestkonzert-am-18-08-17"
+slug: "grosses-seefestkonzert-am-18-08-17"
 ---
 
 <figure>

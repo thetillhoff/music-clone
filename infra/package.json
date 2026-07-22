@@ -2,6 +2,7 @@
   "name": "music-clone-infra",
   "version": "1.0.0",
   "private": true,
+  "main": "bin/index.js",
   "scripts": {
     "build": "tsc"
   },

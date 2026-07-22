@@ -2,14 +2,18 @@
   <div class="j-module n j-header"><h1>{{ .Title }}</h1></div>
 
   {{ $posts := .Pages }}
-  {{ if eq .Parent.Kind "section" }}
+  {{ if and (eq .Parent.Kind "section") (strings.ContainsAny .Title "0123456789") }}
     {{ $posts = where .Parent.Pages ".Date.Year" "eq" (int .Title) }}
   {{ end }}
 
   {{ range $posts }}
     {{ $imgSrc := "" }}
-    {{ $imgMatches := findRE `https://image\.jimcdn\.com[^"]+` .RawContent 1 }}
-    {{ if $imgMatches }}{{ $imgSrc = index $imgMatches 0 }}{{ end }}
+    {{ if .Params.image }}
+      {{ $imgSrc = .Params.image }}
+    {{ else }}
+      {{ $imgMatches := findRE `https://image\.jimcdn\.com[^"]+` .RawContent 1 }}
+      {{ if $imgMatches }}{{ $imgSrc = index $imgMatches 0 }}{{ end }}
+    {{ end }}
 
     <div class="j-module n j-hgrid">
       <div class="cc-m-hgrid-column" style="width: 39%;">
@@ -31,7 +35,7 @@
         <div class="j-module n j-text">
           <div class="j-blog">
             <div class="j-blog-meta" style="padding-left:0;padding-right:0">
-              <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+              <a href="{{ .RelPermalink }}" title="{{ .Title }}" style="cursor: pointer;">
                 <h2 class="j-blog-headline j-blog-post--headline">{{ .Title }}</h2>
               </a>
             </div>

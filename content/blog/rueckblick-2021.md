@@ -2,7 +2,7 @@
 title: "Allerheiligen"
 date: 2021-12-08
 weight: 10
-slug: "rückblick-2021"
+slug: "rueckblick-2021"
 ---
 
 <figure>
