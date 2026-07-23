@@ -1,5 +1,5 @@
 ---
-title: "Musikanten"
+title: "Aktive Musikanten"
 ---
 
 **Musikmeister:** Hans Weber
