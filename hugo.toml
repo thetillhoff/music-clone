@@ -1,5 +1,5 @@
 baseURL = "https://www.blaskapelle-badwiessee.de/"
-languageCode = "de-DE"
+locale = "de-DE"
 defaultContentLanguage = "de"
 title = "Blaskapelle Bad Wiessee"
 
