@@ -50,6 +50,9 @@
     .cc-imagewrapper figcaption { clear: both; font-size: 80%; text-align: center; }
     /* Site title centering */
     #cc-website-title { text-align: center; }
+    /* Reserve bold width on nav links so active item doesn't shift siblings */
+    .jtpl-navigation a, .jtpl-mobile-navigation a { display: inline-flex; flex-direction: column; align-items: center; }
+    .jtpl-navigation a::after, .jtpl-mobile-navigation a::after { content: attr(data-text); font-weight: 700; height: 0; overflow: hidden; visibility: hidden; pointer-events: none; }
     /* Jimdo platform injects float layout for gallery cool items */
     .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; }
     .cc-m-gallery-container { overflow: hidden; }

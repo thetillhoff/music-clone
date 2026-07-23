@@ -3,12 +3,12 @@
   {{ if not .Parent }}
     {{ $active := or (eq $cur .URL) (and (ne .URL "/") (strings.HasPrefix $cur .URL)) }}
     <li class="jmd-nav__list-item-0{{ if .HasChildren }} j-nav-has-children{{ end }}{{ if $active }} j-nav-current{{ end }}">
-      <a href="{{ .URL }}">{{ .Name }}</a>
+      <a href="{{ .URL }}" data-text="{{ .Name }}">{{ .Name }}</a>
       {{ if .HasChildren }}
         <span class="jmd-nav__toggle-button"></span>
         <ul class="cc-nav-level-1 j-nav-level-1">
           {{ range .Children }}
-            <li class="jmd-nav__list-item-1{{ if eq $cur .URL }} j-nav-current{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <li class="jmd-nav__list-item-1{{ if eq $cur .URL }} j-nav-current{{ end }}"><a href="{{ .URL }}" data-text="{{ .Name }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       {{ end }}
