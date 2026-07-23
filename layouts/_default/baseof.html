@@ -11,7 +11,7 @@
   <style>
     html, body { margin: 0; }
     .hidden { display: none; }
-    .jtpl-section-main { width: 100%; max-width: 100%; }
+    .jtpl-section-main { margin: 0 auto; }
     .jtpl-header { padding-top: 80px; padding-bottom: 50px; }
     .j-nav-variant-breadcrumb { display: none; }
     .jtpl-footer { padding: 10px 50px; }
@@ -54,7 +54,7 @@
     .jtpl-navigation .j-nav-level-0 { display: flex !important; justify-content: space-evenly; align-items: center; padding: 0; margin: 0; width: 100%; }
     .jtpl-navigation .jmd-nav__list-item-0 { display: flex !important; align-items: center; }
     /* Jimdo platform injects float layout for gallery cool items */
-    .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; }
+    .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; padding: 0 1%; }
     .cc-m-gallery-container { overflow: hidden; }
     .cc-m-gallery-cool-item img { max-width: 100%; height: auto; display: block; }
     /* Chronik buttons: 4-col grid, 2-col on mobile */
@@ -63,20 +63,20 @@
     @media (max-width: 640px) {
       .chronik-buttons > div { width: 50%; }
     }
-    /* Responsive: stack gallery items vertically on mobile (not the galerie which uses cc-m-gallery-cool) */
+    /* Responsive: stack gallery items on mobile */
     @media (max-width: 767px) {
-      .cc-m-gallery-container:not(.cc-m-gallery-cool) .cc-m-gallery-cool-item {
+      .cc-m-gallery-cool-item {
         width: 100%;
         float: none;
-      }
-      .cc-m-gallery-container:not(.cc-m-gallery-cool) .cc-m-gallery-cool-item img {
-        max-width: 100%;
-        height: auto;
+        padding: 0 0 1%;
       }
     }
     /* Blog detail: float first figure left, text wraps right */
     .j-blog-content > figure:first-of-type { float: left; width: 39%; margin: 0 3% 1em 0; box-sizing: border-box; }
     .j-blog-content::after { content: ""; display: table; clear: both; }
+    /* Chronik decade nav: green button style matching Jimdo j-calltoaction-link-style-1 */
+    .j-calltoaction-link-style-1 { display: inline-block; background-color: #68a94a; color: #fff !important; font-family: "Open Sans", sans-serif; font-size: 16px; font-weight: 600; padding: 8px 16px; text-decoration: none !important; border-radius: 2px; transition: background-color .2s ease-out; }
+    .j-calltoaction-link-style-1:hover, .j-calltoaction-link-style-1:focus { background-color: #559039; color: #fff !important; }
     /* Jimdo platform injects alignment for calltoaction wrappers */
     .j-calltoaction-align-1 { text-align: left; }
     .j-calltoaction-align-2 { text-align: center; }
