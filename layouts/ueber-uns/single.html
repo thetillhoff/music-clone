@@ -1,6 +1,42 @@
 {{ define "main" }}
   <div class="j-module n j-header"><h1>{{ .Title }}</h1></div>
-  <div class="musikanten-content">
-    {{ .Content }}
+
+  <p style="text-align:center; margin: 1.5em 0;"><strong>Musikmeister:</strong> Hans Weber</p>
+
+  <!-- Three group photos in a row -->
+  <div style="display:flex; gap:1%; margin-bottom:1.5em;">
+    <div style="flex:1;"><img src="/images/i612737536fc47dd1.jpg" style="width:100%;height:auto;" alt="Blaskapelle Bad Wiessee"></div>
+    <div style="flex:1;"><img src="/images/ief5b0efbbca03838.jpg" style="width:100%;height:auto;" alt="Blaskapelle Bad Wiessee"></div>
+    <div style="flex:1;"><img src="/images/i26acc4ba351ede1c.jpg" style="width:100%;height:auto;" alt="Blaskapelle Bad Wiessee"></div>
+  </div>
+
+  <!-- Portrait left | instrument list | portrait right -->
+  <div style="display:flex; gap:2%; align-items:flex-start; margin-bottom:1.5em;">
+    <div style="width:28%; flex-shrink:0;">
+      <img src="/images/i63a0d20f845ec08e.jpg" style="width:100%;height:auto;" alt="">
+    </div>
+    <div style="flex:1; column-count:2; column-gap:2em; font-size:0.95em;">
+      <p style="margin:0 0 0.3em;"><strong>Klarinetten:</strong></p>
+      <p style="margin:0 0 0.8em;">Franco Melato<br>Tamara Deichert<br>Vroni Herzinger<br>Almut Mattner<br>Hannah Mattner<br>Kurt Frankenberger</p>
+      <p style="margin:0 0 0.3em;"><strong>Flügelhörner:</strong></p>
+      <p style="margin:0 0 0.8em;">Theresa Buchner<br>Hans Buchberger</p>
+      <p style="margin:0 0 0.3em;"><strong>Trompeten:</strong></p>
+      <p style="margin:0 0 0.8em;">Florian Kölbl<br>Quirin Glonner<br>Maximilian Simon</p>
+      <p style="margin:0 0 0.3em;"><strong>Posaunen:</strong></p>
+      <p style="margin:0 0 0.8em;">Franz Grauvogl</p>
+      <p style="margin:0 0 0.3em;"><strong>Tenorhorn:</strong></p>
+      <p style="margin:0 0 0.8em;">Hubert Götschl</p>
+      <p style="margin:0 0 0.3em;"><strong>Bariton:</strong></p>
+      <p style="margin:0 0 0.8em;">Georg Erlacher</p>
+      <p style="margin:0 0 0.3em;"><strong>Waldhorn:</strong></p>
+      <p style="margin:0 0 0.8em;">Martina Brunner</p>
+      <p style="margin:0 0 0.3em;"><strong>Bässe:</strong></p>
+      <p style="margin:0 0 0.8em;">Peter Teller<br>Thomas Marcher</p>
+      <p style="margin:0 0 0.3em;"><strong>Schlagwerk:</strong></p>
+      <p style="margin:0;">Korbinian Herzinger</p>
+    </div>
+    <div style="width:28%; flex-shrink:0;">
+      <img src="/images/ic1a981005afb772b.jpg" style="width:100%;height:auto;" alt="">
+    </div>
   </div>
 {{ end }}
