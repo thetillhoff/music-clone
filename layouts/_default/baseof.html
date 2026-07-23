@@ -74,6 +74,9 @@
         height: auto;
       }
     }
+    /* Blog detail: float first figure left, text wraps right */
+    .j-blog-content > figure:first-of-type { float: left; width: 39%; margin: 0 3% 1em 0; box-sizing: border-box; }
+    .j-blog-content::after { content: ""; display: table; clear: both; }
     /* Jimdo platform injects alignment for calltoaction wrappers */
     .j-calltoaction-align-1 { text-align: left; }
     .j-calltoaction-align-2 { text-align: center; }
