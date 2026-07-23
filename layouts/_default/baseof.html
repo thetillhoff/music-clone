@@ -58,10 +58,10 @@
     .cc-m-gallery-container { overflow: hidden; }
     .cc-m-gallery-cool-item img { max-width: 100%; height: auto; display: block; }
     /* Chronik buttons: 4-col grid, 2-col on mobile */
-    .chronik-buttons { display: flex; flex-wrap: wrap; }
-    .chronik-buttons > div { width: 25%; box-sizing: border-box; }
+    .chronik-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75em; margin-top: 1.5em; }
+    .chronik-buttons > div { display: flex; justify-content: center; }
     @media (max-width: 640px) {
-      .chronik-buttons > div { width: 50%; }
+      .chronik-buttons { grid-template-columns: repeat(2, 1fr); }
     }
     /* Responsive: stack gallery items on mobile */
     @media (max-width: 767px) {
