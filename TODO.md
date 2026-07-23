@@ -3,7 +3,6 @@
 ## Frontend / UI
 
 - \[H\] `static/css/layout.css:1` — Entire Jimdo theme CSS block appears twice; second block overrides first for critical properties, requiring `!important` overrides in baseof.html. Remove the first (redundant) theme block. Warning: file is large and minified - identify split point carefully.
-- \[M\] `layouts/blog/list.html:11` — Featured image URL extracted via regex hardcoded to `image.jimcdn.com`; new posts with local or other-CDN images will show no thumbnail. Template now checks `params.image` first, but posts still need updating. Consider migrating existing post images to local storage with `params.image` front matter.
 
 ## Config / Data
 
@@ -21,6 +20,5 @@
 - \[M\] `content/blog/rueckblick-2020.md:2` — Title "Eisstockturnier" does not match slug or post content (year-in-review). Change title to "Rückblick 2020".
 - \[M\] `content/blog/rueckblick-2020.md:3` — Date `2020-02-06` is an event date but post is a year-in-review. Update to actual publication date.
 - \[M\] `content/blog/rueckblick-2021.md:2` — Title "Allerheiligen" does not match slug or post content (pandemic recap). Change title to "Rückblick 2021".
-- \[M\] Multiple content files have empty `alt` on non-decorative images: `content/1960-1969.md:46`, `content/1990-1999.md:58`, `content/kontakt/_index.md:24,35`, `content/ueber-uns/musikanten.md:22,29,35,49,93`, hero images in blog posts (`90-jahre`, `bergmesse`, `die-neue-homepage`, `eroeffnung`, `grosses-seefestkonzert`, `neu-in-der-diesjaehrigen`). Add descriptive alt text.
-- \[L\] `content/mach-mit.md:45,48,51` — Empty alt on gallery images. Add descriptive alt text or mark explicitly decorative.
-- \[L\] `content/termine/_index.md` — Page has only a `title` in front matter; renders as completely empty page. Add body content or placeholder.
+- \[M\] Empty `alt` on non-decorative images: `content/1960-1969.md:25`, `content/1990-1999.md:29`, `content/ueber-uns/musikanten.md:13,33`, blog hero images at line 8 in `90-jahre`, `bergmesse`, `die-neue-homepage`, `grosses-seefestkonzert`, `neu-in-der-diesjaehrigen` and line 10 in `eroeffnung-lindenplatz`. Add descriptive alt text.
+- \[L\] `content/mach-mit.md:26-28` — Gallery items have no alt text. Add descriptive alt or mark decorative.
