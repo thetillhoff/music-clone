@@ -36,6 +36,20 @@
     .cc-FloatingButtonBarContainer-button-scroll.cc-FloatingButtonBarContainer-button-scroll-show { display: block; }
     .cc-FloatingButtonBarContainer li button span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -43%); color: rgba(255,255,255,.7); font-size: 18px; line-height: 1; font-weight: bold; }
     .cc-FloatingButtonBarContainer li button:hover span { color: #fff; }
+    /* hgrid float layout — purged from layout.css, restored here */
+    .j-hgrid { padding: 0; }
+    .cc-m-hgrid-column { box-sizing: content-box; float: left; min-height: 1px; min-width: 0; padding: 0 2% 0 0; }
+    .cc-m-hgrid-column.last { float: right; padding: 0; }
+    .cc-m-hgrid-column .n { padding: 5px; }
+    .cc-clear { clear: both; }
+    .cc-clearover:after { content: ""; display: table; clear: both; }
+    /* imagewrapper — purged from layout.css, restored here */
+    .cc-imagewrapper { display: block; height: auto; margin: 0; max-width: 100%; text-align: left; width: 100%; }
+    .cc-imagewrapper.cc-m-width-maxed { width: 100%; }
+    .cc-imagewrapper img { display: inline; max-width: 100%; vertical-align: top; }
+    .cc-imagewrapper figcaption { clear: both; font-size: 80%; text-align: center; }
+    /* Site title centering */
+    #cc-website-title { text-align: center; }
     /* Jimdo platform injects float layout for gallery cool items */
     .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; }
     .cc-m-gallery-container { overflow: hidden; }
