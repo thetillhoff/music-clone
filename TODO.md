@@ -1,9 +1,5 @@
 # TODO
 
-## Frontend / UI
-
-- \[H\] `static/css/layout.css:1` — Entire Jimdo theme CSS block appears twice; second block overrides first for critical properties, requiring `!important` overrides in baseof.html. Remove the first (redundant) theme block. Warning: file is large and minified - identify split point carefully.
-
 ## Config / Data
 
 - \[M\] `data/termine.yaml:1` — All termine entries are dated 2023; the page shows only past events. Update with current or future dates.
