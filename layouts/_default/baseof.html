@@ -81,8 +81,11 @@
     .j-calltoaction-align-1 { text-align: left; }
     .j-calltoaction-align-2 { text-align: center; }
     .j-calltoaction-align-3 { text-align: right; }
-    .jtpl-content { color: #333332; }
+    /* Match .content-options .j-text: Open Sans 20px #161616 */
+    .jtpl-content { color: #161616; font-family: "Open Sans", sans-serif; font-size: 20px; line-height: 1.5; }
     .jtpl-content p { text-align: justify; }
+    /* layout.css .j-module strong{700} doesn't cover our template markup — force it */
+    .jtpl-content strong, .jtpl-content b { font-weight: 700; }
     .j-website-title-content { font-weight: 400; }
     /* Images and figures in content area */
     .jtpl-content img { max-width: 100%; height: auto; }
