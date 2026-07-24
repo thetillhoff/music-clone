@@ -1,7 +1,0 @@
-name: music-clone-infra
-description: Netlify provisioning for Blaskapelle Bad Wiessee
-runtime: nodejs
-config:
-  pulumi:tags:
-    value:
-      pulumi:template: typescript
