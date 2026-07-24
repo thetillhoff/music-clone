@@ -1,30 +1,29 @@
 {{ define "main" }}
   <div class="j-module n j-header"><h1>{{ .Title }}</h1></div>
 
-  <div class="j-module n j-imageSubtitle">
-    <figure class="cc-imagewrapper cc-m-image-align-3 cc-m-width-maxed">
-      <img src="/images/blaskapelle-bad-wiessee.jpg" alt="Blaskapelle Bad Wiessee" style="max-width: 100%; height: auto;">
-    </figure>
+  <div class="j-module n j-text" style="text-align:center; margin-top:1.5em; margin-bottom:1.5em;">
+    <p style="text-align:center; margin-bottom:0.2em;"><strong>Musik verbindet und gibt uns Heimat.</strong></p>
+    <p style="text-align:center; margin-bottom:0;"><strong>Wir teilen gerne unsere besonderen Momente mit Ihnen.</strong></p>
   </div>
 
-  {{ if .Content }}<div class="j-module n j-text">{{ .Content }}</div>{{ end }}
+  <div class="j-module n j-imageSubtitle">
+    <figure class="cc-imagewrapper cc-m-image-align-2" style="text-align:center;">
+      <img src="/images/blaskapelle-bad-wiessee-galerie.jpg" alt="Blaskapelle Bad Wiessee" style="max-width:100%; height: auto;">
+    </figure>
+  </div>
 
   <div class="j-module n j-gallery">
     <div class="cc-m-gallery-container cc-m-gallery-cool clearover">
       {{ range hugo.Data.gallery }}
-        {{ range .images }}
-          <div class="cc-m-gallery-cool-item">
-            <div>
-              <a href="/images/gallery/{{ .file }}" class="glightbox" data-gallery="gallery" data-description="{{ .caption }}">
-                <img src="/images/gallery/{{ .file }}"
-                     alt="{{ .caption }}"
-                     style="height: 245px; width: auto; max-width: 100%; margin-bottom: 10px; margin-right: 10px;"
-                     loading="lazy">
-              </a>
-            </div>
-          </div>
-        {{ end }}
+        <div class="cc-m-gallery-cool-item" style="--r:{{ .ratio }};flex-grow:{{ .ratio }};flex-basis:{{ printf "%.0f" (mul .ratio 240.0) }}px;">
+          <a href="/images/gallery/{{ .file }}" class="glightbox" data-gallery="gallery" data-description="{{ .caption }}">
+            <img src="/images/gallery/{{ .file }}"
+                 alt="{{ .caption }}"
+                 loading="lazy">
+          </a>
+        </div>
       {{ end }}
+      <div style="flex-grow:1000000;height:0;"></div>
     </div>
   </div>
 {{ end }}

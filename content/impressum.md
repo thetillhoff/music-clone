@@ -4,8 +4,8 @@ title: "Impressum"
 
 ## Angaben gemäß § 5 TMG
 
-Musikvereinigung Bad Wiessee
-Sterneggerstr. 9
+Musikvereinigung Bad Wiessee  
+Sterneggerstr. 9  
 83707 Bad Wiessee
 
 ## Vertreten durch
@@ -14,7 +14,7 @@ Sterneggerstr. 9
 
 ## Kontakt
 
-Telefon: 0170 9026600
+Telefon: 0170 9026600  
 E-Mail: info@blaskapelle-badwiessee.de
 
 ---

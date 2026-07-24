@@ -1,5 +1,6 @@
 ---
 title: "Mach mit"
+layout: "mach-mit"
 ---
 
 Wir freuen uns über neue Musiker.

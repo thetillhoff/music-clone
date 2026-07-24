@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="Wir spielen Tanzmusik, bayrisch-böhmische Blasmusik, Konzerte an der Tegernseer Seepromenade und bei Waldfesten.">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Bilbo+Swash+Caps&family=Open+Sans:wght@400;700&family=Open+Sans+Condensed:wght@300;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=fallback">
   <link rel="stylesheet" href="/css/glightbox.min.css">
-  <link rel="stylesheet" href="/css/fonts.css" type="text/css">
   <link rel="stylesheet" href="/css/layout.css" type="text/css">
   <style>
     html, body { margin: 0; }
@@ -16,7 +17,7 @@
     .j-nav-variant-breadcrumb { display: none; }
     .jtpl-footer { padding: 10px 50px; }
     /* layout.css second theme block overrides bg to blue; our <style> (later in cascade) corrects it */
-    .jtpl-content { background-color: rgba(255,255,255,.71); }
+    .jtpl-content { background-color: rgba(255,255,255,.71); padding: 100px 30px; }
     /* Active nav item: layout.css .jtpl-navigation__inner selector has higher specificity — !important needed */
     .navigation-colors .j-nav-current > a,
     .navigation-colors .j-nav-current > a:visited { color: #d7d93e !important; font-weight: 700; }
@@ -27,6 +28,18 @@
     /* Fix: .j-module a:link sets dark link colors; sidebar footer links need white */
     .sidebar-options .j-text a:link,
     .sidebar-options .j-text a:visited { color: #fff; }
+    /* Mobile nav: full viewport width, no forced scrollbar gutter */
+    .jtpl-mobile-navigation { left: 0; right: 0; width: 100%; box-sizing: border-box; overflow-y: auto; }
+    /* Die kommenden Termine h2 — scoped class wins cascade order over layout.css !important */
+    .termine-heading h2 { font-size: 44px !important; }
+    /* Override layout.css mobile 30px !important — keep desktop sizes on all viewports */
+    @media (max-width: 767px) {
+      .j-module .j-website-title-content { font-size: 55px !important; }
+      .j-module h1 { font-size: 44px !important; }
+    }
+    /* Mobile nav font: double layout.css default of 14px */
+    .jtpl-mobile-navigation a:link,
+    .jtpl-mobile-navigation a:visited { font-size: 28px !important; }
     /* layout.css .jmd-nav__toggle-button{display:none}; our selector (.jtpl-mobile-navigation .jmd-nav__toggle-button) wins specificity */
     .jtpl-mobile-navigation .jmd-nav__toggle-button { display: block; }
     /* Scroll-to-top floating button */
@@ -48,35 +61,46 @@
     .cc-imagewrapper.cc-m-width-maxed { width: 100%; }
     .cc-imagewrapper img { display: inline; max-width: 100%; vertical-align: top; }
     .cc-imagewrapper figcaption { clear: both; font-size: 80%; text-align: center; }
+    /* On mobile a stacked column can be wider than a width-maxed image's intrinsic size; max-width
+       alone then leaves it centered with side gaps. Fill the wrapper (the cc-m-width-maxed toggle's
+       intent — mirrors Jimdo's own .j-textWithImage width-maxed rule). Desktop unchanged. */
+    @media (max-width: 767px) {
+      .cc-imagewrapper.cc-m-width-maxed img { width: 100%; }
+    }
     /* Site title centering */
     #cc-website-title { text-align: center; }
-    /* Desktop nav: even distribution */
-    .jtpl-navigation .j-nav-level-0 { display: flex !important; justify-content: space-evenly; align-items: center; padding: 0; margin: 0; width: 100%; }
-    .jtpl-navigation .jmd-nav__list-item-0 { display: flex !important; align-items: center; }
-    /* Jimdo platform injects float layout for gallery cool items */
-    .cc-m-gallery-cool-item { float: left; width: 33.33%; box-sizing: border-box; padding: 0 1%; }
-    .cc-m-gallery-container { overflow: hidden; }
-    .cc-m-gallery-cool-item img { max-width: 100%; height: auto; display: block; }
+    /* Desktop nav: inline-block items centered, matching original */
+    .jtpl-navigation .jtpl-navigation__inner { text-align: center; }
+    .jtpl-navigation .j-nav-level-0 { display: block !important; padding: 0; margin: 0; }
+    .jtpl-navigation .jmd-nav__list-item-0 { display: inline-block !important; }
+    /* GLightbox caption: match site default font size */
+    .glightbox-clean .gdesc-inner, .glightbox-clean .gslide-desc { font-size: 20px; }
+    /* GLightbox: fill viewport width on mobile, maintain aspect ratio */
+    .glightbox-container .gslide-image img { width: 100% !important; height: auto !important; object-fit: contain; max-height: 97vh !important; }
+    /* Justified gallery: flex-grow/basis set inline per-image based on aspect ratio */
+    .cc-m-gallery-container { display: flex; flex-wrap: wrap; gap: 10px; }
+    .cc-m-gallery-cool-item { min-width: 0; }
+    .cc-m-gallery-cool-item a { display: block; }
+    .cc-m-gallery-cool-item img { width: 100%; height: auto; display: block; }
+    /* Mobile: scale target height from 240px → 120px using the --r CSS variable */
+    @media (max-width: 767px) {
+      .cc-m-gallery-cool-item { flex-basis: calc(var(--r) * 120px) !important; }
+    }
     /* Chronik buttons: 4-col grid, 2-col on mobile */
-    .chronik-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75em; margin-top: 1.5em; }
+    .chronik-buttons { display: grid; grid-template-columns: repeat(4, 1fr); column-gap: 2%; row-gap: 1.5em; margin-top: 1.5em; }
     .chronik-buttons > div { display: flex; justify-content: center; }
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
       .chronik-buttons { grid-template-columns: repeat(2, 1fr); }
     }
-    /* Responsive: stack gallery items on mobile */
-    @media (max-width: 767px) {
-      .cc-m-gallery-cool-item {
-        width: 100%;
-        float: none;
-        padding: 0 0 1%;
-      }
+    @media (max-width: 480px) {
+      .chronik-buttons { grid-template-columns: repeat(1, 1fr); }
     }
     /* Blog detail: float first figure left, text wraps right */
     .j-blog-content > figure:first-of-type { float: left; width: 39%; margin: 0 3% 1em 0; box-sizing: border-box; }
     .j-blog-content::after { content: ""; display: table; clear: both; }
     /* Chronik decade nav: green button style matching Jimdo j-calltoaction-link-style-1 */
-    .j-calltoaction-link-style-1 { display: inline-block; background-color: #68a94a; color: #fff !important; font-family: "Open Sans", sans-serif; font-size: 16px; font-weight: 600; padding: 8px 16px; text-decoration: none !important; border-radius: 2px; transition: background-color .2s ease-out; }
-    .j-calltoaction-link-style-1:hover, .j-calltoaction-link-style-1:focus { background-color: #559039; color: #fff !important; }
+    .j-calltoaction-link-style-1 { display: inline-block; background-color: #68a94a; color: #444 !important; font-family: "Open Sans", sans-serif; font-size: 28px; font-weight: 300; line-height: 42px; padding: 10px 15px; text-decoration: none !important; border-radius: 0; transition: background-color .2s ease-out; }
+    .j-calltoaction-link-style-1:hover, .j-calltoaction-link-style-1:focus { background-color: #559039; color: #444 !important; }
     /* Jimdo platform injects alignment for calltoaction wrappers */
     .j-calltoaction-align-1 { text-align: left; }
     .j-calltoaction-align-2 { text-align: center; }
@@ -92,9 +116,45 @@
     .jtpl-content img { max-width: 100%; height: auto; }
     .jtpl-content figure { margin: 1.5em 0; }
     .jtpl-content figcaption, .jtpl-content figcaption p { text-align: center; font-style: italic; color: #666; margin-top: 0.4em; }
+    /* Mach mit: all text centered */
+    .mach-mit-content p { text-align: center !important; }
+    /* Homepage: stack two columns on mobile */
+    @media (max-width: 767px) {
+      #content_area .cc-m-hgrid-column,
+      #content_area .cc-m-hgrid-column.last { float: none; width: 100% !important; padding: 0 0 1.5em; }
+    }
+    /* Footer: stack three columns on mobile */
+    @media (max-width: 767px) {
+      .footer-hgrid .cc-m-hgrid-column,
+      .footer-hgrid .cc-m-hgrid-column.last { float: none; width: 100% !important; padding: 0 0 1.5em; }
+    }
+    /* Kontakt: responsive two-column */
+    @media (max-width: 767px) {
+      .kontakt-hgrid .cc-m-hgrid-column,
+      .kontakt-hgrid .cc-m-hgrid-column.last { float: none; width: 100% !important; padding: 0 0 1.5em; }
+    }
+    /* Termine: responsive two-column */
+    @media (max-width: 767px) {
+      .termine-hgrid .cc-m-hgrid-column,
+      .termine-hgrid .cc-m-hgrid-column.last { float: none; width: 100% !important; padding: 0 0 1.5em; }
+    }
+    /* Musikanten layout */
+    .musikanten-photos { display: flex; gap: 2%; margin-bottom: 3em; }
+    .musikanten-members { display: flex; gap: 4%; align-items: flex-start; margin-bottom: 3em; }
+    .musikanten-portrait { width: 28%; flex-shrink: 0; }
+    .musikanten-list { flex: 1; column-count: 2; column-gap: 4em; }
+    @media (max-width: 1024px) {
+      .musikanten-photos { flex-direction: column; align-items: flex-start; gap: 1em; }
+      .musikanten-photos > div { width: 100%; }
+      .musikanten-members { flex-direction: column; align-items: flex-start; }
+      .musikanten-portrait { width: 100% !important; max-width: none; flex-shrink: 1; }
+      .musikanten-list { width: 100%; column-count: 1; padding: 2em 0; }
+    }
     /* Chronik decade pages — scoped to .chronik-content wrapper */
-    .chronik-content h2 { font-size: 22px; font-weight: bold; text-align: left; margin-top: 1.8em; margin-bottom: 0.4em; }
-    .chronik-content h3 { font-weight: bold; text-align: left; margin-top: 1.5em; margin-bottom: 0.3em; }
+    .chronik-content h2 { font-size: 22px; font-weight: bold; text-align: left; margin-top: 1.5em; margin-bottom: 1em; }
+    .chronik-content h3 { font-weight: bold; text-align: left; margin-top: 2em; margin-bottom: 0.8em; }
+    .chronik-content figure { text-align: center; }
+    .chronik-content figure img { display: inline-block; }
   </style>
 </head>
 
@@ -164,8 +224,7 @@
 
         <!-- footer sidebar content -->
         <footer class="jtpl-footer sidebar-options">
-          <div class="j-module n j-spacing"><div class="cc-m-spacer" style="height: 25px;"></div></div>
-          <div class="j-module n j-hgrid">
+          <div class="j-module n j-hgrid footer-hgrid" style="margin-top: 25px;">
             <div class="cc-m-hgrid-column" style="width: 31.99%;">
               <div class="j-module n j-imageSubtitle">
                 <figure class="cc-imagewrapper cc-m-image-align-1 cc-m-width-maxed">
@@ -197,9 +256,7 @@
             </div>
             <br class="cc-clear">
           </div>
-          <div class="j-module n j-spacing"><div class="cc-m-spacer" style="height: 50px;"></div></div>
-
-          <div class="jtpl-footer__inner footer-options">
+          <div class="jtpl-footer__inner footer-options" style="margin-top: 50px;">
             <div class="j-meta-links">
               Copyright Musikvereinigung Bad Wiessee e.V. - 2017ff
             </div>

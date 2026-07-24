@@ -1,185 +1,198 @@
-- album: "Neueste Fotos"
-  images:
-    - file: "i0d1797ea8195459f.jpg"
-      caption: ""
-    - file: "i8f4cca1ae5d20c46.jpg"
-      caption: ""
-    - file: "i6b8cbf20c7da8ad8.jpg"
-      caption: ""
-    - file: "i0bf216c67e4d8f88.jpg"
-      caption: ""
-    - file: "ie74b0cd2432461f2.jpg"
-      caption: ""
-    - file: "i5f3d8ca97b22d13c.jpg"
-      caption: ""
-
-- album: "Bergmesse Neuhüttenalm 2016"
-  images:
-    - file: "i047d3e42ae901f8f.jpg"
-      caption: "Bergmesse Neuhüttenalm 03.09.2016"
-    - file: "i09f142e8586eda20.jpg"
-      caption: "Bergmesse Neuhüttenalm 03.09.2016"
-    - file: "i81e1903f0b078299.jpg"
-      caption: "Bergmesse Neuhüttenalm 03.09.2016"
-
-- album: "Kirchenkonzert Dezember 2016"
-  images:
-    - file: "if865bc3ffd488c46.jpg"
-      caption: "Kirchenkonzert Dezember 2016"
-    - file: "i3aff810ea64bdd30.jpg"
-      caption: "Kirchenkonzert Dezember 2016"
-    - file: "i0a205aa7fb7b3f99.jpg"
-      caption: "Kirchenkonzert Dezember 2016"
-
-- album: "Grüne Woche Berlin 2017"
-  images:
-    - file: "i59cff4e83a5e1d60.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "if1b56ad1f0d5c512.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "i4ff99b3ff1afbac8.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "i7331c8dd515051cf.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "id00332a106a2e768.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "i74f312d7583cb5ed.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "i6826066333128cdd.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "i873177953ada3429.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "ifd088d32c60207ba.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-    - file: "i5ef7710f3bff3dee.jpg"
-      caption: "Grüne Woche in Berlin Januar 2017"
-
-- album: "TSV-Waldfest Juli 2016"
-  images:
-    - file: "icb7b43d7c85e6b0f.jpg"
-      caption: "TSV-Waldfest Juli 2016"
-
-- album: "Seepromenade"
-  images:
-    - file: "ib03d861677e2ca8b.jpg"
-      caption: "Gruppenbild an der Seepromenade"
-    - file: "i9a6e7405750de813.jpg"
-      caption: "Gruppenbild an der Seepromenade"
-
-- album: "Wiesseer Advent 2016"
-  images:
-    - file: "i57976af315b2e596.jpg"
-      caption: "Wiesseer Advent Dezember 2016"
-    - file: "ifeeb92c7fbf42ea7.jpg"
-      caption: "Waffelstand am Stand des Musikvereins am Wiesseer Advent 2016"
-
-- album: "Osterkonzert 2016"
-  images:
-    - file: "if973d42314aadab6.jpg"
-      caption: "Osterkonzert 2016"
-
-- album: "Seefest 2016"
-  images:
-    - file: "i859a3d4fd66f0eba.jpg"
-      caption: "Einzug Seefest August 2016"
-    - file: "i31d918f09e1e525b.jpg"
-      caption: "Seefest 2016"
-
-- album: "Kirchenkonzert"
-  images:
-    - file: "id8bcfee967b1bbf2.jpg"
-      caption: "Kirchenkonzert"
-    - file: "i3fca3a3a264a9f5e.jpg"
-      caption: "Kirchenkonzert"
-
-- album: "Skiclub-Waldfest Juli 2017"
-  images:
-    - file: "ie4adfee9c7acd94d.jpg"
-      caption: "Skiclub-Waldfest Juli 2017"
-    - file: "i2e07d1da99c3d0da.jpg"
-      caption: "Skiclub-Waldfest Juli 2017"
-    - file: "i5048775c1d4d7dbf.jpg"
-      caption: "Skiclub-Waldfest Juli 2017"
-    - file: "i48351f86a6d2e846.jpg"
-      caption: "Skiclub-Waldfest Juli 2017"
-
-- album: "Bergmesse St. Georg 2014"
-  images:
-    - file: "if16734675a9811c3.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "ide2681cdf01e37d7.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "i927fccdd2d85a22a.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "iffcc77da0567e9cd.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "i2390c38e43b2471d.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "i84a73a65ef4342bb.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "iaa7f8fecd2166049.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "i666e1227de570a4d.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "id94fd88c357a30a9.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "ic68eda37164f23eb.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "i8f2a12e8619a963d.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "i877b64372629e4f6.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-    - file: "id0c40c5214f95176.jpg"
-      caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
-
-- album: "Fronleichnam 2015"
-  images:
-    - file: "i780413298f833a40.jpg"
-      caption: "Fronleichnam 2015"
-    - file: "ib435c5593c480854.jpg"
-      caption: "Fronleichnam 2015"
-    - file: "i7da148c5577ed46e.jpg"
-      caption: "Fronleichnam 2015"
-
-- album: "Konzerte an der Seepromenade 2012"
-  images:
-    - file: "i1d1cf3f9a03f6a08.jpg"
-      caption: "Konzerte an der Seepromenade 2012"
-    - file: "i89855f12894efeed.jpg"
-      caption: "Konzerte an der Seepromenade 2012"
-    - file: "i0022751db63ba3aa.jpg"
-      caption: "Konzerte an der Seepromenade 2012"
-    - file: "i39fe0aabbfb14122.jpg"
-      caption: "Konzerte an der Seepromenade 2012"
-    - file: "i0895852d0c628560.jpg"
-      caption: "Konzerte an der Seepromenade 2012"
-
-- album: "See-Weihnacht Dezember 2016"
-  images:
-    - file: "i1ad17a91ec7bda8a.jpg"
-      caption: "See-Weihnacht Dezember 2016"
-
-- album: "Vereinsjahrtag"
-  images:
-    - file: "i0071bd27d5477274.jpg"
-      caption: "Vereinsjahrtag"
-    - file: "ic27a992efe2638d4.jpg"
-      caption: "Vereinsjahrtag"
-
-- album: "Maibaum-Aufstellen 2012"
-  images:
-    - file: "i9b6f5bb9c401add7.jpg"
-      caption: "Maibaum-Aufstellen 2012"
-    - file: "i146c8989a498a1f3.jpg"
-      caption: "Maibaum-Aufstellen 2012"
-    - file: "i6a75af4989fed2cd.jpg"
-      caption: "Maibaum-Aufstellen 2012"
-
-- album: "Frühjahrskonzert 2013"
-  images:
-    - file: "i0056c710a4d90a66.jpg"
-      caption: "Frühjahrskonzert 2013"
-    - file: "i13da2d09c7628b34.jpg"
-      caption: "Frühjahrskonzert 2013"
-    - file: "if1085bddfee1a6b1.jpg"
-      caption: "Frühjahrskonzert 2013"
+- file: "i0d1797ea8195459f.jpg"
+  caption: ""
+  ratio: 0.75
+- file: "i8f4cca1ae5d20c46.jpg"
+  caption: ""
+  ratio: 1.3325
+- file: "i6b8cbf20c7da8ad8.jpg"
+  caption: ""
+  ratio: 1.3325
+- file: "i0bf216c67e4d8f88.jpg"
+  caption: ""
+  ratio: 0.75
+- file: "ie74b0cd2432461f2.jpg"
+  caption: ""
+  ratio: 0.685
+- file: "i047d3e42ae901f8f.jpg"
+  caption: "Bergmesse Neuhüttenalm 03.09.2016"
+  ratio: 1.7775
+- file: "i09f142e8586eda20.jpg"
+  caption: "Bergmesse Neuhüttenalm 03.09.2016"
+  ratio: 1.7775
+- file: "i81e1903f0b078299.jpg"
+  caption: "Bergmesse Neuhüttenalm 03.09.2016"
+  ratio: 0.5625
+- file: "if865bc3ffd488c46.jpg"
+  caption: "Kirchenkonzert Dezember 2016"
+  ratio: 1.4975
+- file: "i3aff810ea64bdd30.jpg"
+  caption: "Kirchenkonzert Dezember 2016"
+  ratio: 1.5175
+- file: "i59cff4e83a5e1d60.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.7775
+- file: "if1b56ad1f0d5c512.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.3325
+- file: "i4ff99b3ff1afbac8.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.7775
+- file: "i7331c8dd515051cf.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.7775
+- file: "id00332a106a2e768.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.3325
+- file: "i74f312d7583cb5ed.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.0275
+- file: "i6826066333128cdd.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.7775
+- file: "i873177953ada3429.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 0.5625
+- file: "ifd088d32c60207ba.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.615
+- file: "i5ef7710f3bff3dee.jpg"
+  caption: "Grüne Woche in Berlin Januar 2017"
+  ratio: 1.3325
+- file: "icb7b43d7c85e6b0f.jpg"
+  caption: "TSV-Waldfest Juli 2016"
+  ratio: 1.505
+- file: "ib03d861677e2ca8b.jpg"
+  caption: "Gruppenbild an der Seepromenade"
+  ratio: 1.5
+- file: "i9a6e7405750de813.jpg"
+  caption: "Gruppenbild an der Seepromenade"
+  ratio: 2.125
+- file: "i57976af315b2e596.jpg"
+  caption: "Wiesseer Advent Dezember 2016"
+  ratio: 1.7775
+- file: "if973d42314aadab6.jpg"
+  caption: "Osterkonzert 2016"
+  ratio: 1.5
+- file: "i859a3d4fd66f0eba.jpg"
+  caption: "Einzug Seefest August 2016"
+  ratio: 1.4105
+- file: "i0a205aa7fb7b3f99.jpg"
+  caption: "Kirchenkonzert Dezember 2016"
+  ratio: 1.5
+- file: "i31d918f09e1e525b.jpg"
+  caption: "Seefest 2016"
+  ratio: 1.3325
+- file: "id8bcfee967b1bbf2.jpg"
+  caption: "Kirchenkonzert"
+  ratio: 1.5
+- file: "i3fca3a3a264a9f5e.jpg"
+  caption: "Kirchenkonzert"
+  ratio: 1.5
+- file: "ie4adfee9c7acd94d.jpg"
+  caption: "Skiclub-Waldfest Juli 2017"
+  ratio: 1.5
+- file: "i2e07d1da99c3d0da.jpg"
+  caption: "Skiclub-Waldfest Juli 2017"
+  ratio: 1.5
+- file: "i5048775c1d4d7dbf.jpg"
+  caption: "Skiclub-Waldfest Juli 2017"
+  ratio: 1.5
+- file: "i48351f86a6d2e846.jpg"
+  caption: "Skiclub-Waldfest Juli 2017"
+  ratio: 1.5
+- file: "if16734675a9811c3.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "ide2681cdf01e37d7.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "i927fccdd2d85a22a.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "iffcc77da0567e9cd.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "i2390c38e43b2471d.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "i84a73a65ef4342bb.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "iaa7f8fecd2166049.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "i666e1227de570a4d.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "id94fd88c357a30a9.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "ic68eda37164f23eb.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "i8f2a12e8619a963d.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "i877b64372629e4f6.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "id0c40c5214f95176.jpg"
+  caption: "Bergmesse an der St. Georgs-Kapelle Bauer in der Au 2014"
+  ratio: 1.51
+- file: "i780413298f833a40.jpg"
+  caption: "Fronleichnam 2015"
+  ratio: 1.3325
+- file: "ib435c5593c480854.jpg"
+  caption: "Fronleichnam 2015"
+  ratio: 1.3325
+- file: "i7da148c5577ed46e.jpg"
+  caption: "Fronleichnam 2015"
+  ratio: 1.285
+- file: "i1d1cf3f9a03f6a08.jpg"
+  caption: "Konzerte an der Seepromenade 2012"
+  ratio: 0.665
+- file: "i89855f12894efeed.jpg"
+  caption: "Konzerte an der Seepromenade 2012"
+  ratio: 1.5025
+- file: "i0022751db63ba3aa.jpg"
+  caption: "Konzerte an der Seepromenade 2012"
+  ratio: 0.665
+- file: "i39fe0aabbfb14122.jpg"
+  caption: "Konzerte an der Seepromenade 2012"
+  ratio: 1.5025
+- file: "i0895852d0c628560.jpg"
+  caption: "Konzerte an der Seepromenade 2012"
+  ratio: 1.5025
+- file: "ifeeb92c7fbf42ea7.jpg"
+  caption: "Waffelstand am Stand des Musikvereins am Wiesseer Advent 2016"
+  ratio: 1.4975
+- file: "i1ad17a91ec7bda8a.jpg"
+  caption: "See-Weihnacht Dezember 2016"
+  ratio: 1.7775
+- file: "i0071bd27d5477274.jpg"
+  caption: "Vereinsjahrtag"
+  ratio: 1.51
+- file: "ic27a992efe2638d4.jpg"
+  caption: "Vereinsjahrtag"
+  ratio: 1.51
+- file: "i9b6f5bb9c401add7.jpg"
+  caption: "Maibaum-Aufstellen 2012"
+  ratio: 1.51
+- file: "i146c8989a498a1f3.jpg"
+  caption: "Maibaum-Aufstellen 2012"
+  ratio: 1.51
+- file: "i6a75af4989fed2cd.jpg"
+  caption: "Maibaum-Aufstellen 2012"
+  ratio: 1.51
+- file: "i0056c710a4d90a66.jpg"
+  caption: "Frühjahrskonzert 2013"
+  ratio: 1.3325
+- file: "i13da2d09c7628b34.jpg"
+  caption: "Frühjahrskonzert 2013"
+  ratio: 1.3325
+- file: "if1085bddfee1a6b1.jpg"
+  caption: "Frühjahrskonzert 2013"
+  ratio: 1.3325
+- file: "i5f3d8ca97b22d13c.jpg"
+  caption: ""
+  ratio: 1.3325

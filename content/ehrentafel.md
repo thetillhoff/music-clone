@@ -1,6 +1,7 @@
 ---
 title: "Ehrentafel"
 description: "Vorstände und Musikmeister seit dem Gründungsjahr 1927"
+layout: "ehrentafel"
 ---
 
 ![Albin Schmidt - Musikkapelle Bad Wiessee](/images/albin-schmidt-musikkapelle-bad-wiessee.jpg "Gründer Albin Schmidt - 1927")
