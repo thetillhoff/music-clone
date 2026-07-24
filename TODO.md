@@ -5,6 +5,10 @@
 - \[M\] `data/termine.yaml:1` — All termine entries are dated 2023; the page shows only past events. Update with current or future dates.
 - \[L\] `data/gallery.yaml:3` — "Neueste Fotos" album has 6 images with `caption: ""`. Add descriptive captions or add a template fallback so `alt` is never blank.
 
+## Before Go-Live
+
+- Remove bot/crawler blocking: delete `static/robots.txt` and the `noindex`/`nofollow` meta tags in `layouts/_default/baseof.html` once the site is ready to be public.
+
 ## Infra
 
 - \[M\] `infra/index.ts:28` — Delete re-derives site ID by scanning all sites by name; if site was renamed externally, deletion silently fails. Capture and store the site ID at create time.
