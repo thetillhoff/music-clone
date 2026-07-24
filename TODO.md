@@ -9,10 +9,6 @@
 
 - Remove bot/crawler blocking: delete `static/robots.txt` and the `noindex`/`nofollow` meta tags in `layouts/_default/baseof.html` once the site is ready to be public.
 
-## Infra
-
-- \[M\] `infra/index.ts:28` — Delete re-derives site ID by scanning all sites by name; if site was renamed externally, deletion silently fails. Capture and store the site ID at create time.
-
 ## Content
 
 - \[H\] `content/blog/grosses-seefestkonzert-am-18-08-17.md:2` — Title says "20.08.17" and body confirms 20.08.2017, but slug/filename say "18-08-17". Rename file and update slug to `grosses-seefestkonzert-am-20-08-17`.
