@@ -9,9 +9,6 @@ title = "Blaskapelle Bad Wiessee"
     [markup.goldmark.renderer]
       unsafe = false
 
-[permalinks]
-  blog = "/:year/:month/:day/:slug/"
-
 [[menus.main]]
   identifier = "ueber-uns"
   name = "Über uns"
@@ -30,12 +27,6 @@ title = "Blaskapelle Bad Wiessee"
   name = "Mach mit"
   url = "/mach-mit/"
   parent = "ueber-uns"
-  weight = 2
-
-[[menus.main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "/blog/"
   weight = 2
 
 [[menus.main]]
