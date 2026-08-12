@@ -15,7 +15,7 @@ Sterneggerstr. 9
 ## Kontakt
 
 Telefon: 0170 9026600  
-E-Mail: info@blaskapelle-badwiessee.de
+E-Mail: info@trommeldoc.de
 
 ---
 
