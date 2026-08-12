@@ -39,12 +39,6 @@ title = "Blaskapelle Bad Wiessee"
   weight = 2
 
 [[menus.main]]
-  identifier = "termine"
-  name = "Termine"
-  url = "/termine/"
-  weight = 3
-
-[[menus.main]]
   identifier = "chronik"
   name = "Chronik"
   url = "/chronik-1/"

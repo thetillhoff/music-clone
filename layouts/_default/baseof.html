@@ -34,8 +34,6 @@
     .sidebar-options .j-text a:visited { color: #fff; }
     /* Mobile nav: full viewport width, no forced scrollbar gutter */
     .jtpl-mobile-navigation { left: 0; right: 0; width: 100%; box-sizing: border-box; overflow-y: auto; }
-    /* Die kommenden Termine h2 — scoped class wins cascade order over layout.css !important */
-    .termine-heading h2 { font-size: 44px !important; }
     /* Override layout.css mobile 30px !important — keep desktop sizes on all viewports */
     @media (max-width: 767px) {
       .j-module .j-website-title-content { font-size: 55px !important; }
@@ -136,11 +134,6 @@
     @media (max-width: 767px) {
       .kontakt-hgrid .cc-m-hgrid-column,
       .kontakt-hgrid .cc-m-hgrid-column.last { float: none; width: 100% !important; padding: 0 0 1.5em; }
-    }
-    /* Termine: responsive two-column */
-    @media (max-width: 767px) {
-      .termine-hgrid .cc-m-hgrid-column,
-      .termine-hgrid .cc-m-hgrid-column.last { float: none; width: 100% !important; padding: 0 0 1.5em; }
     }
     /* Musikanten layout */
     .musikanten-photos { display: flex; gap: 2%; margin-bottom: 3em; }

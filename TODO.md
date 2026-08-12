@@ -8,7 +8,6 @@
 
 - Bilder als WebP ausliefern für bessere Ladezeiten. Zwei Möglichkeiten: (1) Cloudflare als Proxy/CDN vorschalten — wandelt Bilder kostenlos automatisch in WebP um (Funktion „Polish"); (2) Bilder in `assets/` verschieben und Hugo-Bildverarbeitung (`.Resize` etc.) in den Templates nutzen, was einen größeren Umbau bedeutet.
 
-- `data/termine.yaml` — Alle Termine sind auf 2023 datiert; die Seite zeigt daher nur vergangene Veranstaltungen. Mit aktuellen oder zukünftigen Terminen befüllen.
 - `data/gallery.yaml` — Die ersten fünf Fotos haben keinen Beschreibungstext (`caption: ""`). Beschreibungen ergänzen oder im Template einen Fallback einbauen, damit der `alt`-Text nie leer bleibt.
 
 ## Inhalte
