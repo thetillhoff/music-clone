@@ -122,6 +122,9 @@
       #content_area .cc-m-hgrid-column,
       #content_area .cc-m-hgrid-column.last { float: none; width: 100% !important; padding: 0 0 1.5em; }
     }
+    /* Wider than the hero image's intrinsic 2048px, cc-imagewrapper's left align would
+       leave the leftover space as a gap on the right. Center it instead. */
+    #content_area .cc-imagewrapper { text-align: center; }
     /* Footer: stack three columns on mobile */
     @media (max-width: 767px) {
       .footer-hgrid .cc-m-hgrid-column,
